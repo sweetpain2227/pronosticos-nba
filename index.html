@@ -14,7 +14,7 @@
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Barlow,system-ui,sans-serif;line-height:1.35}
 main{max-width:760px;margin:0 auto;padding:16px}
-h1{font-family:"Barlow Condensed",Impact,sans-serif;font-size:38px;line-height:1;margin:8px 0 4px}
+h1{letter-spacing:.2px;font-family:"Barlow Condensed",Impact,sans-serif;font-size:38px;line-height:1;margin:8px 0 4px}
 .sub{color:var(--mut);margin:0 0 12px;font-size:14px}
 .leg{display:flex;flex-wrap:wrap;gap:6px 16px;background:var(--chip);border-radius:10px;padding:9px 12px;font-size:13px;color:var(--mut);margin-bottom:12px}
 .leg i{display:inline-block;vertical-align:middle;margin-right:5px}
@@ -25,9 +25,9 @@ button{cursor:pointer}
 button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 input{flex:1;min-width:140px;font-weight:500}
 :focus-visible{outline:2px solid #e09a00;outline-offset:2px}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;overflow:hidden}
-.p{padding:10px 14px;border-bottom:1px solid var(--bd);cursor:pointer}
-.p:last-child{border:0}
+.card{box-shadow:0 10px 30px rgba(0,0,0,.06);background:var(--card);border:1px solid var(--bd);border-radius:14px;overflow:hidden}
+.p{padding:14px 16px;border-bottom:1px solid var(--bd);cursor:pointer}
+.p:hover{background:color-mix(in srgb,var(--card) 94%,var(--ink))}.p:last-child{border:0}
 .h{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
 .nm{font-weight:600}.tm{color:var(--mut);font-size:12px;margin-left:6px}
 .v{text-align:right;line-height:1;white-space:nowrap}
@@ -52,7 +52,7 @@ input{flex:1;min-width:140px;font-weight:500}
 <body>
 <main>
 <h1>Pronósticos NBA</h1>
-<p class="sub">Proyección de cada jugador para su próximo partido. Datos al 30 de octubre de 2026. Toca un jugador para ver el detalle y comparar con una línea.</p>
+<p class="sub">Cargando estadísticas y calendario actualizados…</p>
 <div class="leg"><span><i class="i1"></i>Proyección (lo que se espera)</span><span><i class="i2"></i>Rango probable</span><span><i class="i3"></i>Promedio sin ajustar</span></div>
 <div class="row" id="st"></div>
 <div style="display:flex;align-items:center;gap:8px;background:var(--chip);padding:8px 12px;border-radius:10px;margin-bottom:10px;font-size:13px;color:var(--mut)"><label for="rc">Peso de lo reciente:</label><input id="rc" type="range" min="1" max="5" step="0.5" value="2.5" style="flex:1;padding:0"><b id="rcv" style="color:var(--ink)">×2.5</b></div><div class="row"><button id="hoy">Solo juegan hoy</button><input id="q" type="search" placeholder="Buscar jugador" aria-label="Buscar jugador"><select id="tm" aria-label="Equipo"></select></div>
@@ -65,6 +65,7 @@ var T={BRK:"BKN",CHO:"CHA",PHO:"PHX"},ROOK={"AJ Dybantsa":1};
 var P=R.map(function(l){var a=l.split(","),n=a.length>7;return{n:a[0],t:T[a[1]]||a[1],g:+a[2],m:+a[3],c:[+a[4],+a[5],+a[6]],pg:n?+a[7]:0,p:n?[+a[8],+a[9],+a[10]]:null}});
 var D={};"CHI,13.7,30,10.5,29,11.5,26;SAC,10.7,29,3.8,22,14.5,28;MIL,8.5,28,-1.6,14,4.6,21;BKN,8.3,27,-1.6,15,17.6,30;PHX,8.0,26,10.3,28,1.9,18;NOP,6.2,25,-2.9,12,11.5,25;MIA,5.5,24,8.3,27,8.4,23;UTA,5.0,23,-3.4,9,-11.5,5;ORL,4.4,22,8.1,26,14.5,27;GSW,4.3,21,-7.8,4,14.5,29;CLE,2.2,20,1.1,19,4.6,20;WAS,1.1,19,6.9,24,-7.6,9;IND,0.3,18,7.8,25,-3.8,13;ATL,0,17,4.0,23,8.8,24;DEN,-0.4,16,1.8,21,1.1,17;POR,-0.4,15,-7.2,5,-9.2,6;LAL,-0.8,14,-9.6,3,-4.6,10;DAL,-2.2,13,-5.1,6,3.8,19;BOS,-2.4,12,1.3,20,-4.6,11;SAS,-3.9,11,0.2,17,-0.8,16;NYK,-4.3,10,-3.8,8,4.6,22;HOU,-5.0,9,-14.5,1,-7.6,8;CHA,-5.5,8,-11.9,2,-2.3,15;LAC,-5.7,7,-3.1,10,-14.1,2;MIN,-5.9,6,-4.3,7,-4.6,12;PHI,-6.2,5,17.2,30,-13.0,3;MEM,-7.2,4,-2.9,11,-12.2,4;OKC,-8.6,3,-0.2,16,-3.1,14;DET,-9.7,2,-2.0,13,-9.2,7;TOR,-10.5,1,0.7,18,-18.7,1".split(";").forEach(function(s){var a=s.split(",");D[a[0]]=[+a[1],+a[2],+a[3],+a[4],+a[5],+a[6]]});
 var GM={CHA:["WAS",0],WAS:["CHA",1],CHI:["BOS",0],BOS:["CHI",1],DET:["BKN",0],BKN:["DET",1],NYK:["PHI",0],PHI:["NYK",1],ORL:["TOR",0],TOR:["ORL",1],HOU:["DAL",0],DAL:["HOU",1],IND:["MIA",0],MIA:["IND",1],LAC:["MIN",0],MIN:["LAC",1],DEN:["PHX",0],PHX:["DEN",1],LAL:["GSW",0],GSW:["LAL",1]};
+var GAMEINFO={};var DATA_LOADED=false;
 var N=[["Puntos",1.4,"puntos","pts"],["Rebotes",1.15,"rebotes","reb"],["Asistencias",1.15,"asistencias","ast"]],st={k:0,t:"Todos",q:"",o:null,hoy:false,L:{},R:2.5,S:{}};
 var $=function(i){return document.getElementById(i)};
 function cdf(z){var t=1/(1+.2316419*Math.abs(z)),d=.3989423*Math.exp(-z*z/2),p=d*t*(.3193815+t*(-.3565638+t*(1.781478+t*(-1.821256+t*1.330274))));return z>0?1-p:p}
@@ -76,7 +77,7 @@ function calc0(p,k){
  if(g){opp=g[0];home=g[1];var d=D[opp]||[0,0,0,0,0,0];f=1+0.35*d[k*2]/100;f=Math.max(.92,Math.min(1.08,f));var hl=k==0?.015:.01,h=HA[p.n];if(h){var ww=(h[2]+h[3])/(h[2]+h[3]+60),dl=(h[0][k]-h[1][k])/(h[0][k]+h[1][k]);hl=ww*dl+(1-ww)*hl}f*=1+(home?1:-1)*hl}
  var v=base*f,dd=Math.sqrt(N[k][1]*N[k][1]*v*ir*ir+vm);
  return{v:v,base:base,a:a,ir:ir,hl:hl,f:f,opp:opp,home:home,sd:dd,lo:Math.max(0,v-dd),hi:v+dd,wp:wp,rank:opp?(D[opp]||[0,0,0,0,0,0])[k*2+1]:0,pct:opp?(D[opp]||[0,0,0,0,0,0])[k*2]:0}}
-var INJ={"Anthony Edwards":[0,""],"Tyrese Haliburton":[0,""],"Paolo Banchero":[0,""],"Kawhi Leonard":[0,""],"Jaylen Brown":[0,"molestia en la rodilla izquierda; el reporte oficial de ayer lo traía como dudoso y lo puse fuera por indicación tuya"],"Alperen Şengün":[.5,"dolor en la espalda baja"],"Dennis Schröder":[.5,"pie"],"Ziaire Williams":[.5,"pie y talón izquierdos"],"Jalen Smith":[.5,"dedo izquierdo"],"Aaron Nesmith":[.9,"isquiotibial izquierdo"],"Naji Marshall":[.9,"enfermedad"],"Walker Kessler":[1,"dedo, juega con férula"]};
+var INJ={};
 function pj(p){var s=st.S[p.n];return s!=null?s:INJ[p.n]?INJ[p.n][0]:1}
 function calc(p,k){
  var c=calc0(p,k),pp=pj(p),ws=c.base,lost=0;c.ex=0;c.pr=pp;
@@ -95,12 +96,12 @@ function draw(){
  $("st").innerHTML="";N.forEach(function(x,i){var b=document.createElement("button");b.textContent=x[0];b.className=i==k?"on":"";b.onclick=function(){st.k=i;draw()};$("st").appendChild(b)});
  $("hoy").className=st.hoy?"on":"";
  var all=P.map(function(p){return[p,calc(p,k)]}),mx=Math.max.apply(null,all.map(function(x){return x[1].hi}));
- var L=all.filter(function(x){var p=x[0];return(st.t=="Todos"||p.t==st.t)&&p.n.toLowerCase().indexOf(st.q)>-1&&(!st.hoy||GM[p.t])}).sort(function(a,b){return b[1].v-a[1].v});
+ var L=all.filter(function(x){var p=x[0];return(st.t=="Todos"||p.t==st.t)&&p.n.toLowerCase().indexOf(st.q)>-1&&(!st.hoy||(GAMEINFO[p.t]&&GAMEINFO[p.t].status==="live")||(GAMEINFO[p.t]&&new Date(GAMEINFO[p.t].start).toLocaleDateString("sv-SE",{timeZone:"America/Merida"})===new Date().toLocaleDateString("sv-SE",{timeZone:"America/Merida"})))}).sort(function(a,b){return b[1].v-a[1].v});
  var w=function(x){return(x/mx*100).toFixed(1)+"%"};
  $("ls").innerHTML=L.length?L.map(function(x){var p=x[0],c=x[1],col="hsl("+Math.round(210-200*Math.min(1,c.v/(mx*.65)))+",78%,50%)",bd="",ctx="",u=N[k][3];
   if(c.opp){var cl=c.f>1.03?"g":c.f<.97?"r":"n";bd='<span class="bd '+cl+'">'+(c.home?"vs ":"@ ")+c.opp+(cl=="g"?" · cruce bueno":cl=="r"?" · cruce duro":"")+"</span>";
-   ctx="<div>Hoy: <b>"+(c.home?"juega de local":"juega de visitante")+"</b> contra <b>"+c.opp+"</b>. Su defensa permite "+(c.pct>0?"+":"")+c.pct.toFixed(1)+"% de "+N[k][2]+" frente al promedio de la liga, el lugar #"+c.rank+" de 30 (30 es el que más permite). Ajuste total: <b>×"+c.f.toFixed(2)+"</b>.</div>"}
-  else ctx="<div>No juega hoy. Aquí no se aplica local, visitante ni rival.</div>";
+   var gi=GAMEINFO[p.t],when=gi&&gi.start?new Date(gi.start).toLocaleString("es-MX",{timeZone:"America/Merida",weekday:"short",day:"numeric",month:"short",hour:"numeric",minute:"2-digit"}):"fecha no disponible";ctx="<div>"+(gi&&gi.status==="live"?"<b>Partido en vivo</b>":"Próximo partido")+": <b>"+(c.home?"local":"visitante")+"</b> contra <b>"+c.opp+"</b> · "+when+" (Yucatán). Defensa rival sin datos recientes verificados: ajuste defensivo neutro. Ajuste de cancha: <b>×"+c.f.toFixed(2)+"</b>.</div>"}
+  else ctx="<div>No hay un próximo partido confirmado en los siguientes 10 días. No se aplica ajuste de rival ni de cancha.</div>";
   var pr=p.p?(ROOK[p.n]?"<div>2026-27: <b>"+p.c[k].toFixed(1)+"</b> en "+p.g+" partido (es novato). Como hay muy poca muestra, la proyección se apoya en una estimación mía para un novato número 1 ("+p.p[k].toFixed(1)+"), no en datos oficiales. Promedio mezclado: <b>"+c.base.toFixed(1)+"</b>.</div>":"<div>2026-27: <b>"+p.c[k].toFixed(1)+"</b> en "+p.g+" partidos. 2025-26: <b>"+p.p[k].toFixed(1)+"</b> en "+p.pg+" partidos. Suavizamiento: pesa <b>"+Math.round(c.a*100)+"%</b> a esta temporada y "+Math.round((1-c.a)*100)+"% a la anterior. Promedio suavizado: <b>"+c.base.toFixed(1)+"</b>.</div>"):"<div>2026-27: <b>"+p.c[k].toFixed(1)+"</b> en "+p.g+" partidos. No tiene datos de la temporada pasada, así que el pronóstico depende solo de estos partidos.</div>";
   var key=p.n+"|"+k,lv=st.L[key]==null?"":st.L[key],sl=c.pr==0?"Fuera":c.pr<=.25?"Muy dudoso":c.pr<=.5?"Dudoso":c.pr<1?"Probable":"Disponible",ib=c.pr<1?'<span class="bd '+(c.pr==0?"r":c.pr>.5?"n":"a")+'">'+sl+"</span>":"";
   var dif=c.v-c.base,dtxt=c.opp?(Math.abs(dif)<.05?"sin cambio":(dif>0?"+":"−")+Math.abs(dif).toFixed(1)+" por el rival y la cancha"):"sin partido hoy";
@@ -120,37 +121,51 @@ async function actualizarDesdeInternet(){
   var r=await fetch('./datos.json?ts='+Date.now(),{cache:'no-store'});
   if(!r.ok)throw Error('HTTP '+r.status);
   var data=await r.json();
-  if(!Array.isArray(data.players)||!data.players.length)throw Error('Sin estadísticas');
-  // Estandarizar abreviaturas de equipos procedentes de ESPN.
-   var aliases={NO:'NOP',NY:'NYK',GS:'GSW',SA:'SAS',UTAH:'UTA',WSH:'WAS',PHO:'PHX',BRK:'BKN',CHO:'CHA'};
-   var teamCode=function(t){t=String(t||'').toUpperCase();return aliases[t]||t};
-   GM={};
-   Object.entries(data.matchups||{}).forEach(function(entry){
-    var match=entry[1];
-    if(Array.isArray(match)&&match.length>=2&&match[0])GM[teamCode(entry[0])]=[teamCode(match[0]),Number(match[1])||0];
-   });
-  var byName=new Map(P.map(function(p){return [p.n.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(),p]}));
-  data.players.forEach(function(x){
-   var name=x.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
-   var p=byName.get(name);
-   if(!p)return;
-   p.t=teamCode(x.team);
-    if(Number.isFinite(Number(x.games)))p.g=Number(x.games);
-    if(Number.isFinite(Number(x.minutes)))p.m=Number(x.minutes);
-    p.c=[x.pts,x.reb,x.ast].map(function(v,i){return Number.isFinite(Number(v))?Number(v):p.c[i]});
+  if(!Array.isArray(data.players)||data.players.length<30)throw Error('Sin estadísticas suficientes');
+  var aliases={NO:'NOP',NY:'NYK',GS:'GSW',SA:'SAS',UTAH:'UTA',WSH:'WAS',PHO:'PHX',BRK:'BKN',CHO:'CHA'};
+  var teamCode=function(t){t=String(t||'').toUpperCase();return aliases[t]||t};
+  var norm=function(t){return String(t||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim()};
+  GM={};GAMEINFO={};
+  Object.entries(data.games||{}).forEach(function(entry){
+   var x=entry[1],team=teamCode(entry[0]),opp=teamCode(x.opponent);
+   if(!team||!opp||!x.start||!['scheduled','live'].includes(x.status))return;
+   GM[team]=[opp,Number(x.home)||0];
+   GAMEINFO[team]=x;
   });
-  var desc=document.querySelector('.sub');
-  desc.textContent='Promedios recientes ('+data.window+'). Última actualización: '+new Date(data.updated).toLocaleString('es-MX')+'. Toca un jugador para ver el detalle.';
-  // Las bajas y la defensa rival del archivo original no se actualizan automáticamente.
-  // Evitamos usar valores defensivos antiguos como si fueran actuales.
+  // Compatibilidad con datos.json anteriores: no suponer que partidos pasados siguen pendientes.
+  var byName=new Map(P.map(function(p){return[norm(p.n),p]}));
+  var next=[];
+  data.players.forEach(function(x){
+   if(!x||!x.name||!x.team||!Number.isFinite(+x.games)||+x.games<=0)return;
+   var name=norm(x.name),p=byName.get(name);
+   if(!p){p={n:x.name,t:teamCode(x.team),g:0,m:0,c:[0,0,0],pg:0,p:null};}
+   p.t=teamCode(x.team);p.g=+x.games;p.m=Number(x.minutes)||0;
+   p.c=[x.pts,x.reb,x.ast].map(function(v){return Number(v)||0});
+   // Los promedios de la temporada anterior incrustados en HTML no se pueden validar hoy.
+   // Se priorizan las observaciones recientes, sin mezclar temporadas antiguas.
+   p.p=null;p.pg=0;
+   next.push(p);
+  });
+  if(next.length<30)throw Error('No hay suficientes jugadores válidos');
+  P=next;
+  INJ={};HA={};
   Object.keys(D).forEach(function(t){D[t]=[0,0,0,0,0,0]});
-  st.t='Todos';
+  var TL=['Todos'].concat(Array.from(new Set(P.map(function(p){return p.t}))).sort());
+  $('tm').innerHTML=TL.map(function(t){return '<option>'+ (t==='Todos'?'Todos los equipos':t)+'</option>'}).join('');
+  $('tm').onchange=function(){st.t=TL[this.selectedIndex];draw()};
+  st.t='Todos';DATA_LOADED=true;
+  var updated=new Date(data.updated),valid=!isNaN(updated.getTime());
+  document.querySelector('.sub').textContent='Estadísticas observadas de '+P.length+' jugadores · '+data.window+' · Actualizado: '+(valid?updated.toLocaleString('es-MX',{timeZone:'America/Merida'}):'fecha no disponible')+' (Yucatán). Próximos partidos confirmados: '+Math.floor(Object.keys(GM).length/2)+'.';
+  var source=document.querySelector('.src');
+  source.textContent='Fuente: ESPN (API pública no oficial). Promedios de los últimos 30 días; las proyecciones y rangos son estimaciones estadísticas, no resultados garantizados. El calendario muestra próximos partidos o juegos en vivo, sin reutilizar encuentros terminados. Sin datos defensivos actuales ni reportes de lesiones verificados, esos ajustes se omiten. Los datos pueden llegar con retraso.';
   draw();
  }catch(e){
-  var desc=document.querySelector('.sub');
-  desc.textContent='Datos de ejemplo sin actualizar: no se pudo cargar datos.json. '+e.message;
+  GM={};GAMEINFO={};
+  document.querySelector('.sub').textContent='No se pudieron cargar las estadísticas actualizadas: '+e.message+'. Se muestran datos de ejemplo; no los uses como actuales.';
+  draw();
  }
 }
+GM={};INJ={};HA={};Object.keys(D).forEach(function(t){D[t]=[0,0,0,0,0,0]});
 draw();
 actualizarDesdeInternet();
 </script>
