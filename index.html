@@ -115,7 +115,34 @@ $("tm").onchange=function(){st.t=TL[this.selectedIndex];draw()};
 $("q").oninput=function(){st.q=this.value.toLowerCase();draw()};
 $("hoy").onclick=function(){st.hoy=!st.hoy;draw()};
 $("rc").oninput=function(){st.R=+this.value;$("rcv").textContent="×"+this.value;draw()};
+async function actualizarDesdeInternet(){
+ try {
+  var r=await fetch('./datos.json?ts='+Date.now(),{cache:'no-store'});
+  if(!r.ok)throw Error('HTTP '+r.status);
+  var data=await r.json();
+  if(!Array.isArray(data.players)||!data.players.length)throw Error('Sin estadísticas');
+  GM=data.matchups||{};
+  var byName=new Map(P.map(function(p){return [p.n.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase(),p]}));
+  data.players.forEach(function(x){
+   var name=x.name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+   var p=byName.get(name);
+   if(!p)return;
+   p.t=x.team;p.g=x.games;p.m=x.minutes;p.c=[x.pts,x.reb,x.ast];
+  });
+  var desc=document.querySelector('.sub');
+  desc.textContent='Promedios recientes ('+data.window+'). Última actualización: '+new Date(data.updated).toLocaleString('es-MX')+'. Toca un jugador para ver el detalle.';
+  // Las bajas y la defensa rival del archivo original no se actualizan automáticamente.
+  // Evitamos usar valores defensivos antiguos como si fueran actuales.
+  Object.keys(D).forEach(function(t){D[t]=[0,0,0,0,0,0]});
+  st.t='Todos';
+  draw();
+ }catch(e){
+  var desc=document.querySelector('.sub');
+  desc.textContent='Datos de ejemplo sin actualizar: no se pudo cargar datos.json. '+e.message;
+ }
+}
 draw();
+actualizarDesdeInternet();
 </script>
 </body>
 </html>
