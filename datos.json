@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T05:47:07.973772+00:00",
+  "updated": "2026-10-31T05:54:09.712698+00:00",
   "date": "2026-10-30",
   "window": "Últimos 30 días (partidos disponibles)",
   "matchups": {
@@ -76,7 +76,7 @@
       0
     ],
     "GSW": [
-      "LAC",
+      "LAL",
       1
     ],
     "LAC": [
@@ -84,8 +84,8 @@
       0
     ],
     "LAL": [
-      "TOR",
-      1
+      "GSW",
+      0
     ],
     "TOR": [
       "LAL",
@@ -112,12 +112,12 @@
       1
     ],
     "DEN": [
-      "POR",
-      1
+      "PHX",
+      0
     ],
     "PHX": [
-      "GSW",
-      0
+      "DEN",
+      1
     ],
     "MIA": [
       "LAL",
@@ -252,11 +252,11 @@
       "event_id": "401909904"
     },
     "GSW": {
-      "opponent": "LAC",
+      "opponent": "LAL",
       "home": 1,
-      "start": "2026-11-02T01:30:00+00:00",
+      "start": "2026-10-31T02:00:00+00:00",
       "status": "scheduled",
-      "event_id": "401909905"
+      "event_id": "401909285"
     },
     "LAC": {
       "opponent": "GSW",
@@ -266,11 +266,11 @@
       "event_id": "401909905"
     },
     "LAL": {
-      "opponent": "TOR",
-      "home": 1,
-      "start": "2026-11-02T02:00:00+00:00",
+      "opponent": "GSW",
+      "home": 0,
+      "start": "2026-10-31T02:00:00+00:00",
       "status": "scheduled",
-      "event_id": "401909906"
+      "event_id": "401909285"
     },
     "TOR": {
       "opponent": "LAL",
@@ -315,18 +315,18 @@
       "event_id": "401909913"
     },
     "DEN": {
-      "opponent": "POR",
-      "home": 1,
-      "start": "2026-11-03T02:00:00+00:00",
+      "opponent": "PHX",
+      "home": 0,
+      "start": "2026-10-31T02:00:00+00:00",
       "status": "scheduled",
-      "event_id": "401909918"
+      "event_id": "401909286"
     },
     "PHX": {
-      "opponent": "GSW",
-      "home": 0,
-      "start": "2026-11-03T03:00:00+00:00",
+      "opponent": "DEN",
+      "home": 1,
+      "start": "2026-10-31T02:00:00+00:00",
       "status": "scheduled",
-      "event_id": "401909919"
+      "event_id": "401909286"
     },
     "MIA": {
       "opponent": "LAL",
@@ -6349,6 +6349,8 @@
     }
   ],
   "warnings": {
-    "dates_failed": []
+    "dates_failed": [],
+    "team_schedules_failed": [],
+    "calendar_teams_found": 30
   }
 }
