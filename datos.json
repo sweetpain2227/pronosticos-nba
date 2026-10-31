@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T06:09:59.643530+00:00",
+  "updated": "2026-10-31T15:35:05.054699+00:00",
   "date": "2026-10-31",
   "window": "Temporada regular actual (partidos recuperados de ESPN)",
   "matchups": {
@@ -76,7 +76,7 @@
       0
     ],
     "GSW": [
-      "LAL",
+      "LAC",
       1
     ],
     "LAC": [
@@ -84,8 +84,8 @@
       0
     ],
     "LAL": [
-      "GSW",
-      0
+      "TOR",
+      1
     ],
     "TOR": [
       "LAL",
@@ -112,12 +112,12 @@
       1
     ],
     "DEN": [
-      "PHX",
-      0
+      "POR",
+      1
     ],
     "PHX": [
-      "DEN",
-      1
+      "GSW",
+      0
     ],
     "MIA": [
       "LAL",
@@ -252,11 +252,11 @@
       "event_id": "401909904"
     },
     "GSW": {
-      "opponent": "LAL",
+      "opponent": "LAC",
       "home": 1,
-      "start": "2026-10-31T02:00:00+00:00",
+      "start": "2026-11-02T01:30:00+00:00",
       "status": "scheduled",
-      "event_id": "401909285"
+      "event_id": "401909905"
     },
     "LAC": {
       "opponent": "GSW",
@@ -266,11 +266,11 @@
       "event_id": "401909905"
     },
     "LAL": {
-      "opponent": "GSW",
-      "home": 0,
-      "start": "2026-10-31T02:00:00+00:00",
+      "opponent": "TOR",
+      "home": 1,
+      "start": "2026-11-02T02:00:00+00:00",
       "status": "scheduled",
-      "event_id": "401909285"
+      "event_id": "401909906"
     },
     "TOR": {
       "opponent": "LAL",
@@ -315,18 +315,18 @@
       "event_id": "401909913"
     },
     "DEN": {
-      "opponent": "PHX",
-      "home": 0,
-      "start": "2026-10-31T02:00:00+00:00",
+      "opponent": "POR",
+      "home": 1,
+      "start": "2026-11-03T02:00:00+00:00",
       "status": "scheduled",
-      "event_id": "401909286"
+      "event_id": "401909918"
     },
     "PHX": {
-      "opponent": "DEN",
-      "home": 1,
-      "start": "2026-10-31T02:00:00+00:00",
+      "opponent": "GSW",
+      "home": 0,
+      "start": "2026-11-03T03:00:00+00:00",
       "status": "scheduled",
-      "event_id": "401909286"
+      "event_id": "401909919"
     },
     "MIA": {
       "opponent": "LAL",
