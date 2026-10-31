@@ -47,6 +47,57 @@ def minutes_value(value):
         return float(a) + float(b) / 60
     return numeric(value)
 
+
+def next_games_by_team(now):
+    """Consulta el calendario por equipo, independiente del scoreboard diario."""
+    found = {}
+    errors = []
+    try:
+        teams_data = get('/teams?limit=50')
+        sports = teams_data.get('sports') or []
+        leagues = sports[0].get('leagues') or [] if sports else []
+        entries = leagues[0].get('teams') or [] if leagues else []
+    except Exception as exc:
+        print('Advertencia: no se pudo obtener lista de equipos:', exc)
+        return found, ['lista de equipos no disponible']
+    for entry in entries:
+        team = entry.get('team') or entry
+        team_id = team.get('id')
+        abbr = code(team)
+        if not team_id or not abbr:
+            continue
+        try:
+            # En octubre 2026 la temporada NBA corresponde a 2027.
+            season = now.astimezone(TZ).year + (now.astimezone(TZ).month >= 7)
+            schedule = get('/teams/' + str(team_id) + '/schedule?season=' + str(season))
+            events = schedule.get('events') or []
+            for event in events:
+                event_time = parse_time(event.get('date'))
+                if not event_time or event_time < now - dt.timedelta(hours=5):
+                    continue
+                status = (event.get('status') or {}).get('type') or {}
+                if status.get('completed') or status.get('state') == 'post':
+                    continue
+                comps = (event.get('competitions') or [{}])[0].get('competitors') or []
+                own = next((c for c in comps if str((c.get('team') or {}).get('id')) == str(team_id)), None)
+                if not own:
+                    own = next((c for c in comps if code(c.get('team')) == abbr), None)
+                opponent = next((c for c in comps if c is not own), None)
+                if not own or not opponent:
+                    continue
+                other = code(opponent.get('team'))
+                if not other:
+                    continue
+                phase = 'live' if status.get('state') == 'in' else 'scheduled'
+                item = {'opponent': other, 'home': int(own.get('homeAway') == 'home'), 'start': event_time.isoformat(), 'status': phase, 'event_id': str(event.get('id') or '')}
+                if abbr not in found or item['start'] < found[abbr]['start']:
+                    found[abbr] = item
+        except Exception as exc:
+            errors.append(abbr)
+            print('Advertencia: calendario de', abbr, 'no disponible:', exc)
+        time.sleep(.04)
+    return found, errors
+
 def main():
     now = dt.datetime.now(dt.timezone.utc)
     today = now.astimezone(TZ).date()
@@ -115,6 +166,12 @@ def main():
                     for stat, value in (("minutes", mins), ("pts", pts), ("reb", reb), ("ast", ast)):
                         obj[stat] += value
         time.sleep(.08)
+    # El calendario por equipo es una segunda fuente de consulta dentro de ESPN.
+    # Priorizarlo cuando encuentre una fecha más próxima; no borrar datos útiles del scoreboard.
+    team_games, calendar_errors = next_games_by_team(now)
+    for team, game in team_games.items():
+        if team not in upcoming or game['start'] < upcoming[team]['start']:
+            upcoming[team] = game
     players = []
     for obj in totals.values():
         n = obj["games"]
@@ -122,7 +179,7 @@ def main():
             players.append({"id": obj["id"], "name": obj["name"], "team": obj["team"], "games": n, "minutes": round(obj["minutes"] / n, 2), "pts": round(obj["pts"] / n, 2), "reb": round(obj["reb"] / n, 2), "ast": round(obj["ast"] / n, 2)})
     if len(players) < 30:
         raise RuntimeError("Se recibieron muy pocos jugadores. Se conserva datos.json anterior.")
-    result = {"updated": now.isoformat(), "date": today.isoformat(), "window": "Últimos 30 días (partidos disponibles)", "matchups": {k: [v["opponent"], v["home"]] for k, v in upcoming.items()}, "games": upcoming, "players": players, "warnings": {"dates_failed": failed_dates}}
+    result = {"updated": now.isoformat(), "date": today.isoformat(), "window": "Últimos 30 días (partidos disponibles)", "matchups": {k: [v["opponent"], v["home"]] for k, v in upcoming.items()}, "games": upcoming, "players": players, "warnings": {"dates_failed": failed_dates, "team_schedules_failed": calendar_errors, "calendar_teams_found": len(upcoming)}}
     tmp = ROOT / "datos.tmp"
     tmp.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     os.replace(tmp, ROOT / "datos.json")
