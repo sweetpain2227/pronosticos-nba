@@ -103,8 +103,10 @@ def main():
     today = now.astimezone(TZ).date()
     games = {}
     failed_dates = []
-    # Últimos 30 días para promedios; próximos 10 días para el calendario.
-    for days in range(-30, 11):
+    # Iniciar en el comienzo de la temporada regular, no incluir pretemporada.
+    season_start = dt.date(today.year if today.month >= 7 else today.year - 1, 10, 1)
+    first_date = max(season_start, today - dt.timedelta(days=90))
+    for days in range((first_date - today).days, 11):
         date = today + dt.timedelta(days=days)
         try:
             data = get("/scoreboard?dates=" + date.strftime("%Y%m%d") + "&limit=100")
@@ -138,6 +140,14 @@ def main():
                 if team not in upcoming or item["start"] < upcoming[team]["start"]:
                     upcoming[team] = item
         if not completed:
+            continue
+        # ESPN: season.type 1=pretemporada, 2=temporada regular, 3=playoffs.
+        # No mezclar amistosos/pretemporada con las estadísticas oficiales.
+        season_info = event.get('season') or {}
+        season_type = season_info.get('type')
+        if isinstance(season_type, dict):
+            season_type = season_type.get('id', season_type.get('type'))
+        if str(season_type) != '2':
             continue
         try:
             detail = get("/summary?event=" + str(event["id"]))
@@ -177,9 +187,10 @@ def main():
         n = obj["games"]
         if n:
             players.append({"id": obj["id"], "name": obj["name"], "team": obj["team"], "games": n, "minutes": round(obj["minutes"] / n, 2), "pts": round(obj["pts"] / n, 2), "reb": round(obj["reb"] / n, 2), "ast": round(obj["ast"] / n, 2)})
+    print('Partidos de temporada regular procesados:', sum(p['games'] for p in players), 'participaciones de jugadores')
     if len(players) < 30:
         raise RuntimeError("Se recibieron muy pocos jugadores. Se conserva datos.json anterior.")
-    result = {"updated": now.isoformat(), "date": today.isoformat(), "window": "Últimos 30 días (partidos disponibles)", "matchups": {k: [v["opponent"], v["home"]] for k, v in upcoming.items()}, "games": upcoming, "players": players, "warnings": {"dates_failed": failed_dates, "team_schedules_failed": calendar_errors, "calendar_teams_found": len(upcoming)}}
+    result = {"updated": now.isoformat(), "date": today.isoformat(), "window": "Temporada regular actual (partidos recuperados de ESPN)", "matchups": {k: [v["opponent"], v["home"]] for k, v in upcoming.items()}, "games": upcoming, "players": players, "warnings": {"dates_failed": failed_dates, "team_schedules_failed": calendar_errors, "calendar_teams_found": len(upcoming)}}
     tmp = ROOT / "datos.tmp"
     tmp.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
     os.replace(tmp, ROOT / "datos.json")
