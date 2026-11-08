@@ -1,64 +1,8 @@
 {
-  "updated": "2026-11-07T17:45:18.877057+00:00",
-  "date": "2026-11-07",
+  "updated": "2026-11-08T17:56:51.619840+00:00",
+  "date": "2026-11-08",
   "window": "Temporada regular actual (partidos recuperados de ESPN)",
   "matchups": {
-    "IND": [
-      "DEN",
-      1
-    ],
-    "DEN": [
-      "IND",
-      0
-    ],
-    "ATL": [
-      "BKN",
-      1
-    ],
-    "BKN": [
-      "ATL",
-      0
-    ],
-    "CLE": [
-      "NYK",
-      1
-    ],
-    "NYK": [
-      "CLE",
-      0
-    ],
-    "OKC": [
-      "WAS",
-      1
-    ],
-    "WAS": [
-      "OKC",
-      0
-    ],
-    "GSW": [
-      "ORL",
-      1
-    ],
-    "ORL": [
-      "GSW",
-      0
-    ],
-    "PHX": [
-      "HOU",
-      1
-    ],
-    "HOU": [
-      "PHX",
-      0
-    ],
-    "POR": [
-      "SAS",
-      1
-    ],
-    "SAS": [
-      "POR",
-      0
-    ],
     "CHI": [
       "PHI",
       1
@@ -87,6 +31,10 @@
       "BKN",
       1
     ],
+    "BKN": [
+      "DAL",
+      0
+    ],
     "MIL": [
       "BOS",
       1
@@ -111,9 +59,21 @@
       "SAC",
       0
     ],
+    "ATL": [
+      "LAL",
+      1
+    ],
     "CHA": [
       "CLE",
       1
+    ],
+    "CLE": [
+      "CHA",
+      0
+    ],
+    "WAS": [
+      "DET",
+      0
     ],
     "TOR": [
       "MEM",
@@ -122,107 +82,49 @@
     "MEM": [
       "TOR",
       0
+    ],
+    "IND": [
+      "DAL",
+      0
+    ],
+    "HOU": [
+      "DEN",
+      1
+    ],
+    "DEN": [
+      "HOU",
+      0
+    ],
+    "PHX": [
+      "SAS",
+      1
+    ],
+    "SAS": [
+      "PHX",
+      0
+    ],
+    "GSW": [
+      "NOP",
+      1
+    ],
+    "NYK": [
+      "MIL",
+      1
+    ],
+    "ORL": [
+      "SAC",
+      0
+    ],
+    "POR": [
+      "OKC",
+      1
+    ],
+    "OKC": [
+      "POR",
+      0
     ]
   },
   "games": {
-    "IND": {
-      "opponent": "DEN",
-      "home": 1,
-      "start": "2026-11-07T22:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909938"
-    },
-    "DEN": {
-      "opponent": "IND",
-      "home": 0,
-      "start": "2026-11-07T22:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909938"
-    },
-    "ATL": {
-      "opponent": "BKN",
-      "home": 1,
-      "start": "2026-11-08T00:30:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909939"
-    },
-    "BKN": {
-      "opponent": "ATL",
-      "home": 0,
-      "start": "2026-11-08T00:30:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909939"
-    },
-    "CLE": {
-      "opponent": "NYK",
-      "home": 1,
-      "start": "2026-11-08T01:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909940"
-    },
-    "NYK": {
-      "opponent": "CLE",
-      "home": 0,
-      "start": "2026-11-08T01:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909940"
-    },
-    "OKC": {
-      "opponent": "WAS",
-      "home": 1,
-      "start": "2026-11-08T01:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909941"
-    },
-    "WAS": {
-      "opponent": "OKC",
-      "home": 0,
-      "start": "2026-11-08T01:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909941"
-    },
-    "GSW": {
-      "opponent": "ORL",
-      "home": 1,
-      "start": "2026-11-08T01:30:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909942"
-    },
-    "ORL": {
-      "opponent": "GSW",
-      "home": 0,
-      "start": "2026-11-08T01:30:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909942"
-    },
-    "PHX": {
-      "opponent": "HOU",
-      "home": 1,
-      "start": "2026-11-08T02:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909943"
-    },
-    "HOU": {
-      "opponent": "PHX",
-      "home": 0,
-      "start": "2026-11-08T02:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909943"
-    },
-    "POR": {
-      "opponent": "SAS",
-      "home": 1,
-      "start": "2026-11-08T03:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909944"
-    },
-    "SAS": {
-      "opponent": "POR",
-      "home": 0,
-      "start": "2026-11-08T03:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909944"
-    },
     "CHI": {
       "opponent": "PHI",
       "home": 1,
@@ -272,6 +174,13 @@
       "status": "scheduled",
       "event_id": "401909948"
     },
+    "BKN": {
+      "opponent": "DAL",
+      "home": 0,
+      "start": "2026-11-09T00:30:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909948"
+    },
     "MIL": {
       "opponent": "BOS",
       "home": 1,
@@ -314,12 +223,33 @@
       "status": "scheduled",
       "event_id": "401909951"
     },
+    "ATL": {
+      "opponent": "LAL",
+      "home": 1,
+      "start": "2026-11-10T00:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909952"
+    },
     "CHA": {
       "opponent": "CLE",
       "home": 1,
       "start": "2026-11-10T00:00:00+00:00",
       "status": "scheduled",
       "event_id": "401909953"
+    },
+    "CLE": {
+      "opponent": "CHA",
+      "home": 0,
+      "start": "2026-11-10T00:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909953"
+    },
+    "WAS": {
+      "opponent": "DET",
+      "home": 0,
+      "start": "2026-11-10T00:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909954"
     },
     "TOR": {
       "opponent": "MEM",
@@ -334,6 +264,76 @@
       "start": "2026-11-10T00:30:00+00:00",
       "status": "scheduled",
       "event_id": "401909955"
+    },
+    "IND": {
+      "opponent": "DAL",
+      "home": 0,
+      "start": "2026-11-10T01:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909956"
+    },
+    "HOU": {
+      "opponent": "DEN",
+      "home": 1,
+      "start": "2026-11-10T01:30:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909957"
+    },
+    "DEN": {
+      "opponent": "HOU",
+      "home": 0,
+      "start": "2026-11-10T01:30:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909957"
+    },
+    "PHX": {
+      "opponent": "SAS",
+      "home": 1,
+      "start": "2026-11-10T02:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909958"
+    },
+    "SAS": {
+      "opponent": "PHX",
+      "home": 0,
+      "start": "2026-11-10T02:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909958"
+    },
+    "GSW": {
+      "opponent": "NOP",
+      "home": 1,
+      "start": "2026-11-10T03:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909959"
+    },
+    "NYK": {
+      "opponent": "MIL",
+      "home": 1,
+      "start": "2026-11-11T00:30:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909960"
+    },
+    "ORL": {
+      "opponent": "SAC",
+      "home": 0,
+      "start": "2026-11-11T03:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909964"
+    },
+    "POR": {
+      "opponent": "OKC",
+      "home": 1,
+      "start": "2026-11-11T04:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909965"
+    },
+    "OKC": {
+      "opponent": "POR",
+      "home": 0,
+      "start": "2026-11-11T04:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909965"
     }
   },
   "players": [
@@ -651,21 +651,21 @@
       "id": "3934719",
       "name": "OG Anunoby",
       "team": "NYK",
-      "games": 8,
-      "minutes": 33.0,
-      "pts": 16.62,
-      "reb": 5.5,
-      "ast": 2.5
+      "games": 9,
+      "minutes": 33.11,
+      "pts": 16.44,
+      "reb": 5.56,
+      "ast": 2.44
     },
     {
       "id": "3136195",
       "name": "Karl-Anthony Towns",
       "team": "NYK",
-      "games": 8,
-      "minutes": 31.25,
-      "pts": 19.88,
-      "reb": 13.62,
-      "ast": 3.12
+      "games": 9,
+      "minutes": 31.56,
+      "pts": 20.89,
+      "reb": 13.56,
+      "ast": 3.11
     },
     {
       "id": "3062679",
@@ -681,51 +681,51 @@
       "id": "3147657",
       "name": "Mikal Bridges",
       "team": "NYK",
-      "games": 8,
-      "minutes": 25.38,
-      "pts": 6.25,
-      "reb": 2.88,
-      "ast": 2.0
+      "games": 9,
+      "minutes": 26.0,
+      "pts": 6.56,
+      "reb": 3.22,
+      "ast": 2.22
     },
     {
       "id": "3934672",
       "name": "Jalen Brunson",
       "team": "NYK",
-      "games": 8,
-      "minutes": 33.88,
-      "pts": 25.62,
-      "reb": 2.62,
-      "ast": 5.12
+      "games": 9,
+      "minutes": 33.89,
+      "pts": 26.22,
+      "reb": 3.0,
+      "ast": 5.56
     },
     {
       "id": "6585",
       "name": "Andre Drummond",
       "team": "NYK",
-      "games": 8,
-      "minutes": 13.0,
-      "pts": 5.62,
-      "reb": 7.75,
-      "ast": 1.12
+      "games": 9,
+      "minutes": 13.11,
+      "pts": 5.0,
+      "reb": 7.78,
+      "ast": 1.0
     },
     {
       "id": "2528426",
       "name": "Jordan Clarkson",
       "team": "NYK",
-      "games": 7,
-      "minutes": 9.71,
-      "pts": 6.14,
-      "reb": 1.43,
-      "ast": 0.43
+      "games": 8,
+      "minutes": 10.38,
+      "pts": 6.5,
+      "reb": 1.5,
+      "ast": 0.38
     },
     {
       "id": "3914044",
       "name": "Landry Shamet",
       "team": "NYK",
-      "games": 8,
-      "minutes": 24.88,
-      "pts": 9.38,
-      "reb": 1.5,
-      "ast": 2.0
+      "games": 9,
+      "minutes": 25.33,
+      "pts": 9.33,
+      "reb": 1.44,
+      "ast": 1.89
     },
     {
       "id": "4277869",
@@ -741,21 +741,21 @@
       "id": "4431823",
       "name": "Miles McBride",
       "team": "NYK",
-      "games": 8,
-      "minutes": 17.5,
-      "pts": 6.88,
-      "reb": 1.88,
-      "ast": 1.0
+      "games": 9,
+      "minutes": 17.33,
+      "pts": 6.67,
+      "reb": 1.67,
+      "ast": 0.89
     },
     {
       "id": "4222252",
       "name": "Isaiah Hartenstein",
       "team": "OKC",
-      "games": 9,
-      "minutes": 24.89,
-      "pts": 7.44,
-      "reb": 9.67,
-      "ast": 3.0
+      "games": 10,
+      "minutes": 24.2,
+      "pts": 6.9,
+      "reb": 10.1,
+      "ast": 3.3
     },
     {
       "id": "4433255",
@@ -771,11 +771,11 @@
       "id": "4278073",
       "name": "Shai Gilgeous-Alexander",
       "team": "OKC",
-      "games": 9,
-      "minutes": 33.33,
-      "pts": 29.89,
-      "reb": 4.11,
-      "ast": 4.44
+      "games": 10,
+      "minutes": 32.9,
+      "pts": 29.9,
+      "reb": 3.9,
+      "ast": 4.9
     },
     {
       "id": "4593803",
@@ -811,151 +811,151 @@
       "id": "4684208",
       "name": "Brooks Barnhizer",
       "team": "OKC",
-      "games": 6,
-      "minutes": 5.17,
-      "pts": 1.33,
-      "reb": 0.67,
-      "ast": 0.17
+      "games": 7,
+      "minutes": 5.57,
+      "pts": 1.43,
+      "reb": 1.14,
+      "ast": 0.57
     },
     {
       "id": "5174983",
       "name": "Aday Mara",
       "team": "OKC",
-      "games": 9,
-      "minutes": 19.0,
-      "pts": 7.0,
-      "reb": 5.67,
-      "ast": 1.11
+      "games": 10,
+      "minutes": 19.8,
+      "pts": 8.1,
+      "reb": 5.9,
+      "ast": 1.3
     },
     {
       "id": "2991350",
       "name": "Alex Caruso",
       "team": "OKC",
-      "games": 6,
-      "minutes": 19.33,
-      "pts": 8.17,
-      "reb": 4.83,
-      "ast": 3.33
+      "games": 7,
+      "minutes": 18.43,
+      "pts": 7.0,
+      "reb": 4.57,
+      "ast": 3.29
     },
     {
       "id": "3133626",
       "name": "Kenrich Williams",
       "team": "OKC",
-      "games": 9,
-      "minutes": 17.89,
-      "pts": 6.56,
-      "reb": 3.78,
-      "ast": 1.11
+      "games": 10,
+      "minutes": 18.4,
+      "pts": 6.8,
+      "reb": 3.8,
+      "ast": 1.2
     },
     {
       "id": "4683778",
       "name": "Jared McCain",
       "team": "OKC",
-      "games": 9,
-      "minutes": 25.44,
-      "pts": 11.33,
-      "reb": 3.22,
-      "ast": 1.67
+      "games": 10,
+      "minutes": 25.2,
+      "pts": 12.1,
+      "reb": 3.4,
+      "ast": 1.7
     },
     {
       "id": "4900671",
       "name": "Ajay Mitchell",
       "team": "OKC",
-      "games": 9,
-      "minutes": 27.78,
-      "pts": 19.67,
-      "reb": 3.67,
-      "ast": 3.67
+      "games": 10,
+      "minutes": 27.2,
+      "pts": 18.9,
+      "reb": 3.7,
+      "ast": 3.3
     },
     {
       "id": "5241364",
       "name": "Bennett Stirtz",
       "team": "OKC",
-      "games": 9,
-      "minutes": 16.78,
-      "pts": 7.22,
-      "reb": 0.78,
-      "ast": 1.11
+      "games": 10,
+      "minutes": 18.0,
+      "pts": 7.6,
+      "reb": 1.2,
+      "ast": 1.3
     },
     {
       "id": "5104157",
       "name": "Victor Wembanyama",
       "team": "SAS",
-      "games": 9,
-      "minutes": 31.0,
-      "pts": 29.11,
-      "reb": 12.56,
+      "games": 10,
+      "minutes": 30.3,
+      "pts": 29.1,
+      "reb": 12.0,
       "ast": 3.0
     },
     {
       "id": "4066259",
       "name": "De'Aaron Fox",
       "team": "SAS",
-      "games": 9,
-      "minutes": 30.33,
-      "pts": 14.44,
-      "reb": 4.0,
-      "ast": 5.89
+      "games": 10,
+      "minutes": 29.5,
+      "pts": 13.8,
+      "reb": 3.9,
+      "ast": 5.9
     },
     {
       "id": "4395630",
       "name": "Devin Vassell",
       "team": "SAS",
-      "games": 9,
-      "minutes": 31.22,
-      "pts": 11.56,
-      "reb": 4.0,
-      "ast": 3.11
+      "games": 10,
+      "minutes": 30.2,
+      "pts": 11.9,
+      "reb": 3.8,
+      "ast": 3.1
     },
     {
       "id": "4845367",
       "name": "Stephon Castle",
       "team": "SAS",
-      "games": 9,
-      "minutes": 29.44,
-      "pts": 15.44,
-      "reb": 5.78,
+      "games": 10,
+      "minutes": 28.9,
+      "pts": 15.3,
+      "reb": 5.9,
       "ast": 5.0
     },
     {
       "id": "5037871",
       "name": "Dylan Harper",
       "team": "SAS",
-      "games": 9,
-      "minutes": 32.33,
-      "pts": 18.67,
-      "reb": 5.22,
-      "ast": 4.44
+      "games": 10,
+      "minutes": 31.9,
+      "pts": 18.1,
+      "reb": 5.4,
+      "ast": 4.3
     },
     {
       "id": "6578",
       "name": "Harrison Barnes",
       "team": "SAS",
-      "games": 7,
-      "minutes": 12.14,
-      "pts": 5.14,
-      "reb": 0.43,
+      "games": 8,
+      "minutes": 13.0,
+      "pts": 5.12,
+      "reb": 0.75,
       "ast": 0.0
     },
     {
       "id": "4395723",
       "name": "Keldon Johnson",
       "team": "SAS",
-      "games": 9,
-      "minutes": 23.0,
-      "pts": 8.0,
-      "reb": 5.56,
-      "ast": 1.78
+      "games": 10,
+      "minutes": 23.4,
+      "pts": 8.2,
+      "reb": 5.7,
+      "ast": 2.0
     },
     {
       "id": "4592479",
       "name": "Julian Champagnie",
       "team": "SAS",
-      "games": 9,
-      "minutes": 26.0,
-      "pts": 9.56,
-      "reb": 4.11,
-      "ast": 1.44
+      "games": 10,
+      "minutes": 25.5,
+      "pts": 10.0,
+      "reb": 4.1,
+      "ast": 1.3
     },
     {
       "id": "4713010",
@@ -971,11 +971,11 @@
       "id": "5061568",
       "name": "Carter Bryant",
       "team": "SAS",
-      "games": 8,
-      "minutes": 9.0,
-      "pts": 2.12,
-      "reb": 0.25,
-      "ast": 0.38
+      "games": 9,
+      "minutes": 9.89,
+      "pts": 2.56,
+      "reb": 0.67,
+      "ast": 0.44
     },
     {
       "id": "5105337",
@@ -991,21 +991,21 @@
       "id": "3064560",
       "name": "Luke Kornet",
       "team": "SAS",
-      "games": 9,
-      "minutes": 15.22,
-      "pts": 2.89,
-      "reb": 4.22,
-      "ast": 0.89
+      "games": 10,
+      "minutes": 15.2,
+      "pts": 3.2,
+      "reb": 4.2,
+      "ast": 1.0
     },
     {
       "id": "5105809",
       "name": "Tarris Reed Jr.",
       "team": "SAS",
-      "games": 5,
-      "minutes": 4.6,
+      "games": 6,
+      "minutes": 5.33,
       "pts": 2.0,
-      "reb": 3.2,
-      "ast": 0.0
+      "reb": 3.17,
+      "ast": 0.17
     },
     {
       "id": "5107968",
@@ -1021,51 +1021,51 @@
       "id": "4431680",
       "name": "Onyeka Okongwu",
       "team": "ATL",
-      "games": 10,
-      "minutes": 29.5,
-      "pts": 13.2,
-      "reb": 8.6,
-      "ast": 2.6
+      "games": 11,
+      "minutes": 29.55,
+      "pts": 13.45,
+      "reb": 8.0,
+      "ast": 2.82
     },
     {
       "id": "4701230",
       "name": "Jalen Johnson",
       "team": "ATL",
-      "games": 7,
-      "minutes": 32.71,
-      "pts": 18.29,
-      "reb": 9.0,
-      "ast": 7.86
+      "games": 8,
+      "minutes": 33.12,
+      "pts": 19.75,
+      "reb": 8.75,
+      "ast": 7.62
     },
     {
       "id": "2490149",
       "name": "CJ McCollum",
       "team": "ATL",
-      "games": 10,
-      "minutes": 26.2,
-      "pts": 13.3,
-      "reb": 3.0,
-      "ast": 4.0
+      "games": 11,
+      "minutes": 25.73,
+      "pts": 12.91,
+      "reb": 3.09,
+      "ast": 3.91
     },
     {
       "id": "4278039",
       "name": "Nickeil Alexander-Walker",
       "team": "ATL",
-      "games": 10,
-      "minutes": 30.6,
-      "pts": 22.3,
-      "reb": 3.2,
-      "ast": 2.6
+      "games": 11,
+      "minutes": 30.64,
+      "pts": 22.09,
+      "reb": 3.18,
+      "ast": 2.45
     },
     {
       "id": "4869342",
       "name": "Dyson Daniels",
       "team": "ATL",
-      "games": 10,
-      "minutes": 30.2,
-      "pts": 9.9,
-      "reb": 6.9,
-      "ast": 5.4
+      "games": 11,
+      "minutes": 30.27,
+      "pts": 9.82,
+      "reb": 7.18,
+      "ast": 5.55
     },
     {
       "id": "3146557",
@@ -1081,31 +1081,31 @@
       "id": "4397020",
       "name": "Luguentz Dort",
       "team": "ATL",
-      "games": 10,
-      "minutes": 26.0,
-      "pts": 10.5,
-      "reb": 3.4,
-      "ast": 1.8
+      "games": 11,
+      "minutes": 25.45,
+      "pts": 9.82,
+      "reb": 3.27,
+      "ast": 1.73
     },
     {
       "id": "4397183",
       "name": "Aaron Wiggins",
       "team": "ATL",
-      "games": 10,
-      "minutes": 26.3,
-      "pts": 14.4,
-      "reb": 3.7,
-      "ast": 2.0
+      "games": 11,
+      "minutes": 26.27,
+      "pts": 14.91,
+      "reb": 3.73,
+      "ast": 2.36
     },
     {
       "id": "5149077",
       "name": "Kingston Flemings",
       "team": "ATL",
-      "games": 9,
-      "minutes": 21.11,
-      "pts": 8.33,
-      "reb": 2.67,
-      "ast": 4.78
+      "games": 10,
+      "minutes": 21.7,
+      "pts": 8.5,
+      "reb": 2.6,
+      "ast": 4.4
     },
     {
       "id": "4432573",
@@ -1121,21 +1121,21 @@
       "id": "4566434",
       "name": "Franz Wagner",
       "team": "ORL",
-      "games": 8,
-      "minutes": 36.0,
-      "pts": 19.62,
-      "reb": 6.38,
-      "ast": 8.5
+      "games": 9,
+      "minutes": 36.44,
+      "pts": 20.78,
+      "reb": 6.33,
+      "ast": 8.78
     },
     {
       "id": "4277847",
       "name": "Wendell Carter Jr.",
       "team": "ORL",
-      "games": 8,
-      "minutes": 32.62,
-      "pts": 14.25,
-      "reb": 9.38,
-      "ast": 1.12
+      "games": 9,
+      "minutes": 33.44,
+      "pts": 14.78,
+      "reb": 9.56,
+      "ast": 1.0
     },
     {
       "id": "4066320",
@@ -1161,51 +1161,51 @@
       "id": "4278572",
       "name": "Jamal Cain",
       "team": "ORL",
-      "games": 8,
-      "minutes": 17.38,
-      "pts": 5.88,
-      "reb": 2.0,
-      "ast": 0.25
+      "games": 9,
+      "minutes": 19.44,
+      "pts": 7.22,
+      "reb": 3.11,
+      "ast": 0.33
     },
     {
       "id": "4702382",
       "name": "Tristan da Silva",
       "team": "ORL",
-      "games": 8,
-      "minutes": 29.38,
-      "pts": 14.62,
-      "reb": 3.25,
-      "ast": 1.62
+      "games": 9,
+      "minutes": 30.44,
+      "pts": 15.11,
+      "reb": 3.67,
+      "ast": 1.67
     },
     {
       "id": "6478",
       "name": "Nikola Vucevic",
       "team": "ORL",
-      "games": 8,
-      "minutes": 8.88,
-      "pts": 2.75,
-      "reb": 2.62,
-      "ast": 1.12
+      "games": 9,
+      "minutes": 8.56,
+      "pts": 2.44,
+      "reb": 2.44,
+      "ast": 1.22
     },
     {
       "id": "4348700",
       "name": "Goga Bitadze",
       "team": "ORL",
-      "games": 6,
-      "minutes": 9.0,
-      "pts": 3.67,
-      "reb": 3.17,
-      "ast": 0.33
+      "games": 7,
+      "minutes": 8.71,
+      "pts": 3.71,
+      "reb": 3.43,
+      "ast": 0.57
     },
     {
       "id": "5239561",
       "name": "Jase Richardson",
       "team": "ORL",
-      "games": 8,
-      "minutes": 21.62,
-      "pts": 6.38,
-      "reb": 1.88,
-      "ast": 2.5
+      "games": 9,
+      "minutes": 22.56,
+      "pts": 5.89,
+      "reb": 2.11,
+      "ast": 2.67
     },
     {
       "id": "3134907",
@@ -1331,41 +1331,41 @@
       "id": "5174563",
       "name": "Kyshawn George",
       "team": "WAS",
-      "games": 9,
-      "minutes": 33.44,
-      "pts": 19.0,
-      "reb": 4.22,
-      "ast": 5.11
+      "games": 10,
+      "minutes": 33.1,
+      "pts": 18.5,
+      "reb": 4.5,
+      "ast": 5.2
     },
     {
       "id": "5160992",
       "name": "Alex Sarr",
       "team": "WAS",
-      "games": 8,
-      "minutes": 25.75,
-      "pts": 10.0,
-      "reb": 6.25,
-      "ast": 2.12
+      "games": 9,
+      "minutes": 26.0,
+      "pts": 10.56,
+      "reb": 7.11,
+      "ast": 2.0
     },
     {
       "id": "4277905",
       "name": "Trae Young",
       "team": "WAS",
-      "games": 9,
-      "minutes": 36.0,
-      "pts": 20.0,
-      "reb": 3.22,
-      "ast": 9.56
+      "games": 10,
+      "minutes": 35.2,
+      "pts": 18.4,
+      "reb": 3.4,
+      "ast": 8.9
     },
     {
       "id": "5104155",
       "name": "Bilal Coulibaly",
       "team": "WAS",
-      "games": 9,
-      "minutes": 26.44,
-      "pts": 8.0,
-      "reb": 3.56,
-      "ast": 0.78
+      "games": 10,
+      "minutes": 25.8,
+      "pts": 7.2,
+      "reb": 3.7,
+      "ast": 0.7
     },
     {
       "id": "6609",
@@ -1391,31 +1391,31 @@
       "id": "4278129",
       "name": "Deandre Ayton",
       "team": "WAS",
-      "games": 9,
-      "minutes": 16.0,
-      "pts": 5.67,
-      "reb": 5.22,
-      "ast": 1.11
+      "games": 10,
+      "minutes": 15.1,
+      "pts": 5.3,
+      "reb": 4.8,
+      "ast": 1.0
     },
     {
       "id": "4845374",
       "name": "Bub Carrington",
       "team": "WAS",
-      "games": 9,
-      "minutes": 19.11,
-      "pts": 5.33,
-      "reb": 1.67,
-      "ast": 2.11
+      "games": 10,
+      "minutes": 19.3,
+      "pts": 5.7,
+      "reb": 2.1,
+      "ast": 2.0
     },
     {
       "id": "5238230",
       "name": "Tre Johnson",
       "team": "WAS",
-      "games": 8,
-      "minutes": 20.88,
-      "pts": 10.25,
-      "reb": 2.0,
-      "ast": 0.62
+      "games": 9,
+      "minutes": 21.67,
+      "pts": 9.56,
+      "reb": 1.78,
+      "ast": 0.89
     },
     {
       "id": "4431671",
@@ -1781,31 +1781,31 @@
       "id": "3064514",
       "name": "Julius Randle",
       "team": "BKN",
-      "games": 8,
-      "minutes": 33.75,
-      "pts": 21.0,
-      "reb": 7.12,
-      "ast": 4.75
+      "games": 9,
+      "minutes": 33.78,
+      "pts": 20.78,
+      "reb": 7.11,
+      "ast": 5.11
     },
     {
       "id": "4278104",
       "name": "Michael Porter Jr.",
       "team": "BKN",
-      "games": 8,
-      "minutes": 33.12,
-      "pts": 21.38,
-      "reb": 7.38,
-      "ast": 1.25
+      "games": 9,
+      "minutes": 33.44,
+      "pts": 21.78,
+      "reb": 7.56,
+      "ast": 1.22
     },
     {
       "id": "4432194",
       "name": "Day'Ron Sharpe",
       "team": "BKN",
-      "games": 8,
-      "minutes": 23.12,
-      "pts": 7.12,
-      "reb": 7.12,
-      "ast": 2.62
+      "games": 9,
+      "minutes": 24.11,
+      "pts": 7.67,
+      "reb": 7.44,
+      "ast": 3.78
     },
     {
       "id": "4702177",
@@ -1831,51 +1831,51 @@
       "id": "4712896",
       "name": "Noah Clowney",
       "team": "BKN",
-      "games": 8,
-      "minutes": 21.12,
-      "pts": 5.62,
-      "reb": 4.38,
-      "ast": 0.88
+      "games": 9,
+      "minutes": 21.11,
+      "pts": 5.33,
+      "reb": 5.0,
+      "ast": 0.78
     },
     {
       "id": "5174655",
       "name": "Chaney Johnson",
       "team": "BKN",
-      "games": 8,
-      "minutes": 21.12,
-      "pts": 5.12,
-      "reb": 2.88,
+      "games": 9,
+      "minutes": 19.67,
+      "pts": 5.11,
+      "reb": 2.78,
       "ast": 1.0
     },
     {
       "id": "3150844",
       "name": "Moritz Wagner",
       "team": "BKN",
-      "games": 8,
-      "minutes": 18.88,
-      "pts": 10.38,
-      "reb": 3.38,
-      "ast": 1.12
+      "games": 9,
+      "minutes": 18.56,
+      "pts": 10.22,
+      "reb": 3.22,
+      "ast": 1.0
     },
     {
       "id": "5101761",
       "name": "Mikel Brown Jr.",
       "team": "BKN",
-      "games": 6,
-      "minutes": 23.0,
-      "pts": 12.0,
-      "reb": 2.33,
-      "ast": 4.0
+      "games": 7,
+      "minutes": 23.29,
+      "pts": 12.86,
+      "reb": 2.14,
+      "ast": 3.86
     },
     {
       "id": "5279130",
       "name": "Nolan Traore",
       "team": "BKN",
-      "games": 8,
-      "minutes": 22.12,
-      "pts": 12.0,
-      "reb": 2.25,
-      "ast": 2.75
+      "games": 9,
+      "minutes": 22.22,
+      "pts": 12.78,
+      "reb": 2.11,
+      "ast": 2.67
     },
     {
       "id": "4397189",
@@ -2361,41 +2361,41 @@
       "id": "3149673",
       "name": "Pascal Siakam",
       "team": "IND",
-      "games": 8,
+      "games": 9,
       "minutes": 32.0,
-      "pts": 21.25,
-      "reb": 7.12,
-      "ast": 3.75
+      "pts": 21.44,
+      "reb": 6.56,
+      "ast": 3.89
     },
     {
       "id": "4017837",
       "name": "Ivica Zubac",
       "team": "IND",
-      "games": 4,
-      "minutes": 21.0,
-      "pts": 7.0,
-      "reb": 7.75,
-      "ast": 1.5
+      "games": 5,
+      "minutes": 20.6,
+      "pts": 7.6,
+      "reb": 8.6,
+      "ast": 2.2
     },
     {
       "id": "3133603",
       "name": "Kelly Oubre Jr.",
       "team": "IND",
-      "games": 7,
-      "minutes": 23.29,
-      "pts": 9.43,
-      "reb": 2.57,
-      "ast": 1.57
+      "games": 8,
+      "minutes": 22.38,
+      "pts": 8.5,
+      "reb": 2.38,
+      "ast": 1.38
     },
     {
       "id": "4395712",
       "name": "Andrew Nembhard",
       "team": "IND",
-      "games": 7,
-      "minutes": 33.43,
-      "pts": 19.0,
-      "reb": 2.14,
-      "ast": 6.86
+      "games": 8,
+      "minutes": 33.12,
+      "pts": 17.75,
+      "reb": 2.0,
+      "ast": 7.0
     },
     {
       "id": "4396993",
@@ -2411,30 +2411,30 @@
       "id": "2580365",
       "name": "Larry Nance Jr.",
       "team": "IND",
-      "games": 8,
-      "minutes": 16.0,
-      "pts": 3.38,
-      "reb": 3.25,
-      "ast": 0.62
+      "games": 9,
+      "minutes": 15.67,
+      "pts": 4.67,
+      "reb": 3.11,
+      "ast": 0.67
     },
     {
       "id": "4278355",
       "name": "Obi Toppin",
       "team": "IND",
-      "games": 6,
-      "minutes": 22.33,
-      "pts": 14.5,
-      "reb": 5.17,
-      "ast": 1.17
+      "games": 7,
+      "minutes": 22.29,
+      "pts": 13.86,
+      "reb": 5.43,
+      "ast": 1.29
     },
     {
       "id": "5106060",
       "name": "Jarace Walker",
       "team": "IND",
-      "games": 9,
-      "minutes": 24.0,
-      "pts": 7.22,
-      "reb": 6.33,
+      "games": 10,
+      "minutes": 23.6,
+      "pts": 7.4,
+      "reb": 6.2,
       "ast": 2.0
     },
     {
@@ -2451,11 +2451,11 @@
       "id": "4592829",
       "name": "Quenton Jackson",
       "team": "IND",
-      "games": 9,
-      "minutes": 21.89,
-      "pts": 10.44,
-      "reb": 3.44,
-      "ast": 2.67
+      "games": 10,
+      "minutes": 21.4,
+      "pts": 10.0,
+      "reb": 3.5,
+      "ast": 2.5
     },
     {
       "id": "4395628",
@@ -2671,51 +2671,51 @@
       "id": "3202",
       "name": "Kevin Durant",
       "team": "HOU",
-      "games": 9,
-      "minutes": 33.78,
-      "pts": 20.78,
-      "reb": 5.22,
+      "games": 10,
+      "minutes": 34.2,
+      "pts": 20.8,
+      "reb": 5.7,
       "ast": 3.0
     },
     {
       "id": "4432639",
       "name": "Jabari Smith Jr.",
       "team": "HOU",
-      "games": 9,
-      "minutes": 34.56,
-      "pts": 17.56,
-      "reb": 6.11,
-      "ast": 2.33
+      "games": 10,
+      "minutes": 35.0,
+      "pts": 17.3,
+      "reb": 6.4,
+      "ast": 2.3
     },
     {
       "id": "4871144",
       "name": "Alperen Sengun",
       "team": "HOU",
-      "games": 7,
-      "minutes": 35.14,
-      "pts": 22.43,
-      "reb": 9.14,
-      "ast": 8.14
+      "games": 8,
+      "minutes": 34.75,
+      "pts": 21.5,
+      "reb": 8.75,
+      "ast": 7.75
     },
     {
       "id": "2991230",
       "name": "Fred VanVleet",
       "team": "HOU",
-      "games": 7,
-      "minutes": 30.0,
-      "pts": 13.0,
-      "reb": 3.43,
-      "ast": 6.29
+      "games": 8,
+      "minutes": 30.12,
+      "pts": 13.38,
+      "reb": 3.38,
+      "ast": 6.0
     },
     {
       "id": "4684740",
       "name": "Amen Thompson",
       "team": "HOU",
-      "games": 9,
-      "minutes": 32.56,
-      "pts": 15.44,
-      "reb": 6.33,
-      "ast": 3.33
+      "games": 10,
+      "minutes": 33.2,
+      "pts": 15.6,
+      "reb": 6.4,
+      "ast": 3.0
     },
     {
       "id": "3136777",
@@ -2731,11 +2731,11 @@
       "id": "4433192",
       "name": "Tari Eason",
       "team": "HOU",
-      "games": 9,
-      "minutes": 24.56,
-      "pts": 10.22,
-      "reb": 5.89,
-      "ast": 1.22
+      "games": 10,
+      "minutes": 24.4,
+      "pts": 9.4,
+      "reb": 6.0,
+      "ast": 1.3
     },
     {
       "id": "4592857",
@@ -2761,31 +2761,31 @@
       "id": "2990992",
       "name": "Marcus Smart",
       "team": "HOU",
-      "games": 6,
-      "minutes": 23.0,
-      "pts": 9.83,
-      "reb": 2.83,
-      "ast": 2.5
+      "games": 7,
+      "minutes": 22.57,
+      "pts": 9.14,
+      "reb": 2.71,
+      "ast": 2.14
     },
     {
       "id": "3037789",
       "name": "Bogdan Bogdanovic",
       "team": "HOU",
-      "games": 9,
-      "minutes": 12.22,
-      "pts": 5.56,
-      "reb": 1.11,
-      "ast": 1.11
+      "games": 10,
+      "minutes": 11.2,
+      "pts": 5.0,
+      "reb": 1.1,
+      "ast": 1.0
     },
     {
       "id": "4711272",
       "name": "Reed Sheppard",
       "team": "HOU",
-      "games": 6,
-      "minutes": 21.83,
-      "pts": 10.67,
-      "reb": 2.33,
-      "ast": 3.67
+      "games": 7,
+      "minutes": 20.57,
+      "pts": 10.0,
+      "reb": 2.0,
+      "ast": 3.14
     },
     {
       "id": "5105837",
@@ -2801,61 +2801,61 @@
       "id": "6589",
       "name": "Draymond Green",
       "team": "GSW",
-      "games": 7,
-      "minutes": 26.71,
-      "pts": 3.0,
-      "reb": 5.0,
-      "ast": 7.0
+      "games": 8,
+      "minutes": 27.62,
+      "pts": 2.88,
+      "reb": 5.12,
+      "ast": 7.75
     },
     {
       "id": "4997536",
       "name": "Gui Santos",
       "team": "GSW",
-      "games": 6,
-      "minutes": 20.17,
-      "pts": 7.17,
-      "reb": 4.0,
-      "ast": 1.33
+      "games": 7,
+      "minutes": 19.0,
+      "pts": 6.57,
+      "reb": 3.57,
+      "ast": 1.14
     },
     {
       "id": "5175737",
       "name": "Yaxel Lendeborg",
       "team": "GSW",
-      "games": 9,
-      "minutes": 31.67,
-      "pts": 21.0,
-      "reb": 7.11,
-      "ast": 4.11
+      "games": 10,
+      "minutes": 32.2,
+      "pts": 21.2,
+      "reb": 7.2,
+      "ast": 4.0
     },
     {
       "id": "3975",
       "name": "Stephen Curry",
       "team": "GSW",
-      "games": 7,
-      "minutes": 28.86,
-      "pts": 29.86,
-      "reb": 3.71,
-      "ast": 4.43
+      "games": 8,
+      "minutes": 29.75,
+      "pts": 31.25,
+      "reb": 4.0,
+      "ast": 4.62
     },
     {
       "id": "4066436",
       "name": "De'Anthony Melton",
       "team": "GSW",
-      "games": 9,
-      "minutes": 22.33,
-      "pts": 10.0,
-      "reb": 4.67,
-      "ast": 2.22
+      "games": 10,
+      "minutes": 21.8,
+      "pts": 9.4,
+      "reb": 4.3,
+      "ast": 2.1
     },
     {
       "id": "2990969",
       "name": "Georges Niang",
       "team": "GSW",
-      "games": 9,
-      "minutes": 20.11,
-      "pts": 7.89,
-      "reb": 3.11,
-      "ast": 1.67
+      "games": 10,
+      "minutes": 20.6,
+      "pts": 8.2,
+      "reb": 3.0,
+      "ast": 1.6
     },
     {
       "id": "4703396",
@@ -2881,31 +2881,31 @@
       "id": "3213",
       "name": "Al Horford",
       "team": "GSW",
-      "games": 7,
-      "minutes": 18.57,
-      "pts": 5.43,
-      "reb": 4.14,
-      "ast": 1.0
+      "games": 8,
+      "minutes": 17.88,
+      "pts": 5.0,
+      "reb": 4.25,
+      "ast": 1.38
     },
     {
       "id": "3134903",
       "name": "Gary Payton II",
       "team": "GSW",
-      "games": 9,
-      "minutes": 13.44,
-      "pts": 5.11,
-      "reb": 1.78,
-      "ast": 0.44
+      "games": 10,
+      "minutes": 13.4,
+      "pts": 5.0,
+      "reb": 1.6,
+      "ast": 0.4
     },
     {
       "id": "4397040",
       "name": "Brandon Williams",
       "team": "GSW",
-      "games": 8,
-      "minutes": 17.88,
-      "pts": 11.38,
-      "reb": 2.62,
-      "ast": 2.62
+      "games": 9,
+      "minutes": 17.78,
+      "pts": 11.11,
+      "reb": 2.33,
+      "ast": 2.56
     },
     {
       "id": "4433149",
@@ -2921,10 +2921,10 @@
       "id": "4897262",
       "name": "Will Richard",
       "team": "GSW",
-      "games": 9,
-      "minutes": 17.67,
-      "pts": 5.22,
-      "reb": 1.78,
+      "games": 10,
+      "minutes": 17.1,
+      "pts": 5.1,
+      "reb": 1.8,
       "ast": 1.0
     },
     {
@@ -3051,71 +3051,71 @@
       "id": "3155526",
       "name": "Dillon Brooks",
       "team": "PHX",
-      "games": 7,
-      "minutes": 30.43,
-      "pts": 17.57,
-      "reb": 3.86,
-      "ast": 2.71
+      "games": 8,
+      "minutes": 31.25,
+      "pts": 16.75,
+      "reb": 3.88,
+      "ast": 2.5
     },
     {
       "id": "4066383",
       "name": "Miles Bridges",
       "team": "PHX",
-      "games": 7,
-      "minutes": 32.57,
-      "pts": 17.43,
-      "reb": 7.86,
-      "ast": 3.14
+      "games": 8,
+      "minutes": 32.38,
+      "pts": 16.88,
+      "reb": 8.12,
+      "ast": 3.62
     },
     {
       "id": "5203685",
       "name": "Khaman Maluach",
       "team": "PHX",
-      "games": 7,
-      "minutes": 19.86,
-      "pts": 7.29,
-      "reb": 6.0,
-      "ast": 1.29
+      "games": 8,
+      "minutes": 19.62,
+      "pts": 7.38,
+      "reb": 6.5,
+      "ast": 1.12
     },
     {
       "id": "3136193",
       "name": "Devin Booker",
       "team": "PHX",
-      "games": 7,
-      "minutes": 34.43,
-      "pts": 25.43,
-      "reb": 2.86,
-      "ast": 5.14
+      "games": 8,
+      "minutes": 35.0,
+      "pts": 25.25,
+      "reb": 2.75,
+      "ast": 4.88
     },
     {
       "id": "4437244",
       "name": "Jalen Green",
       "team": "PHX",
-      "games": 7,
-      "minutes": 28.43,
-      "pts": 11.86,
-      "reb": 2.86,
-      "ast": 3.29
+      "games": 8,
+      "minutes": 29.12,
+      "pts": 12.38,
+      "reb": 2.88,
+      "ast": 3.62
     },
     {
       "id": "4601023",
       "name": "Oso Ighodaro",
       "team": "PHX",
-      "games": 5,
-      "minutes": 21.4,
-      "pts": 7.0,
-      "reb": 5.2,
-      "ast": 3.6
+      "games": 6,
+      "minutes": 21.67,
+      "pts": 6.5,
+      "reb": 5.33,
+      "ast": 3.5
     },
     {
       "id": "4888725",
       "name": "Ryan Dunn",
       "team": "PHX",
-      "games": 7,
-      "minutes": 15.0,
-      "pts": 5.29,
-      "reb": 3.57,
-      "ast": 1.14
+      "games": 8,
+      "minutes": 16.0,
+      "pts": 5.62,
+      "reb": 3.75,
+      "ast": 1.38
     },
     {
       "id": "5041953",
@@ -3161,11 +3161,11 @@
       "id": "4278585",
       "name": "Collin Gillespie",
       "team": "PHX",
-      "games": 7,
-      "minutes": 25.14,
-      "pts": 6.71,
-      "reb": 2.14,
-      "ast": 4.14
+      "games": 8,
+      "minutes": 24.5,
+      "pts": 6.75,
+      "reb": 2.25,
+      "ast": 4.12
     },
     {
       "id": "4280245",
@@ -3191,41 +3191,41 @@
       "id": "4431736",
       "name": "Toumani Camara",
       "team": "POR",
-      "games": 8,
-      "minutes": 28.0,
-      "pts": 14.25,
-      "reb": 3.25,
-      "ast": 1.25
+      "games": 9,
+      "minutes": 27.22,
+      "pts": 13.11,
+      "reb": 3.33,
+      "ast": 1.11
     },
     {
       "id": "4683021",
       "name": "Deni Avdija",
       "team": "POR",
-      "games": 8,
-      "minutes": 33.12,
-      "pts": 23.25,
-      "reb": 6.75,
-      "ast": 7.0
+      "games": 9,
+      "minutes": 32.11,
+      "pts": 22.33,
+      "reb": 6.44,
+      "ast": 6.33
     },
     {
       "id": "5105565",
       "name": "Donovan Clingan",
       "team": "POR",
-      "games": 8,
-      "minutes": 25.12,
-      "pts": 12.62,
-      "reb": 10.62,
-      "ast": 1.5
+      "games": 9,
+      "minutes": 24.78,
+      "pts": 11.89,
+      "reb": 10.0,
+      "ast": 1.33
     },
     {
       "id": "6606",
       "name": "Damian Lillard",
       "team": "POR",
-      "games": 8,
-      "minutes": 30.62,
-      "pts": 20.38,
-      "reb": 3.62,
-      "ast": 4.12
+      "games": 9,
+      "minutes": 29.44,
+      "pts": 19.44,
+      "reb": 3.22,
+      "ast": 4.44
     },
     {
       "id": "4279888",
@@ -3251,31 +3251,31 @@
       "id": "4066399",
       "name": "Micah Potter",
       "team": "POR",
-      "games": 4,
-      "minutes": 6.75,
-      "pts": 2.75,
-      "reb": 1.75,
-      "ast": 0.0
+      "games": 5,
+      "minutes": 8.2,
+      "pts": 3.6,
+      "reb": 2.0,
+      "ast": 0.2
     },
     {
       "id": "5217746",
       "name": "Yang Hansen",
       "team": "POR",
-      "games": 5,
-      "minutes": 7.0,
-      "pts": 3.2,
-      "reb": 2.0,
-      "ast": 0.4
+      "games": 6,
+      "minutes": 10.17,
+      "pts": 4.67,
+      "reb": 3.33,
+      "ast": 0.5
     },
     {
       "id": "3995",
       "name": "Jrue Holiday",
       "team": "POR",
-      "games": 8,
-      "minutes": 26.62,
-      "pts": 13.25,
-      "reb": 4.0,
-      "ast": 4.5
+      "games": 9,
+      "minutes": 25.89,
+      "pts": 13.0,
+      "reb": 3.56,
+      "ast": 4.0
     },
     {
       "id": "4578893",
@@ -3291,31 +3291,31 @@
       "id": "4683678",
       "name": "Scoot Henderson",
       "team": "POR",
-      "games": 8,
-      "minutes": 22.25,
-      "pts": 7.88,
-      "reb": 2.25,
-      "ast": 1.25
+      "games": 9,
+      "minutes": 22.44,
+      "pts": 8.44,
+      "reb": 2.22,
+      "ast": 1.22
     },
     {
       "id": "4703889",
       "name": "Jayson Kent",
       "team": "POR",
-      "games": 1,
-      "minutes": 7.0,
-      "pts": 0.0,
+      "games": 2,
+      "minutes": 9.5,
+      "pts": 2.0,
       "reb": 1.0,
-      "ast": 0.0
+      "ast": 0.5
     },
     {
       "id": "5081727",
       "name": "Sidy Cissoko",
       "team": "POR",
-      "games": 8,
-      "minutes": 21.75,
-      "pts": 6.38,
-      "reb": 3.88,
-      "ast": 2.25
+      "games": 9,
+      "minutes": 21.11,
+      "pts": 6.11,
+      "reb": 3.78,
+      "ast": 2.11
     },
     {
       "id": "3155942",
@@ -3571,51 +3571,51 @@
       "id": "4432158",
       "name": "Evan Mobley",
       "team": "CLE",
-      "games": 9,
-      "minutes": 32.78,
-      "pts": 19.11,
-      "reb": 8.0,
-      "ast": 3.56
+      "games": 10,
+      "minutes": 32.8,
+      "pts": 18.4,
+      "reb": 8.1,
+      "ast": 3.7
     },
     {
       "id": "3992",
       "name": "James Harden",
       "team": "CLE",
-      "games": 9,
-      "minutes": 33.22,
-      "pts": 16.67,
-      "reb": 5.33,
-      "ast": 5.89
+      "games": 10,
+      "minutes": 33.3,
+      "pts": 15.7,
+      "reb": 5.0,
+      "ast": 5.8
     },
     {
       "id": "3908809",
       "name": "Donovan Mitchell",
       "team": "CLE",
-      "games": 9,
-      "minutes": 33.11,
-      "pts": 22.56,
-      "reb": 5.22,
-      "ast": 5.78
+      "games": 10,
+      "minutes": 33.5,
+      "pts": 24.0,
+      "reb": 5.1,
+      "ast": 5.6
     },
     {
       "id": "4576087",
       "name": "Peyton Watson",
       "team": "CLE",
-      "games": 7,
-      "minutes": 28.29,
-      "pts": 11.14,
-      "reb": 4.71,
-      "ast": 2.86
+      "games": 8,
+      "minutes": 28.38,
+      "pts": 11.25,
+      "reb": 4.88,
+      "ast": 2.88
     },
     {
       "id": "2995706",
       "name": "Mario Hezonja",
       "team": "CLE",
-      "games": 9,
-      "minutes": 20.56,
-      "pts": 9.33,
-      "reb": 6.33,
-      "ast": 1.89
+      "games": 10,
+      "minutes": 20.4,
+      "pts": 8.4,
+      "reb": 6.2,
+      "ast": 1.8
     },
     {
       "id": "4066757",
@@ -3641,71 +3641,71 @@
       "id": "4701233",
       "name": "Craig Porter Jr.",
       "team": "CLE",
-      "games": 7,
-      "minutes": 8.29,
-      "pts": 0.71,
-      "reb": 1.71,
+      "games": 8,
+      "minutes": 9.12,
+      "pts": 0.62,
+      "reb": 1.62,
       "ast": 1.0
     },
     {
       "id": "5023693",
       "name": "Tyrese Proctor",
       "team": "CLE",
-      "games": 8,
-      "minutes": 15.0,
-      "pts": 5.88,
+      "games": 9,
+      "minutes": 15.89,
+      "pts": 6.0,
       "reb": 3.0,
-      "ast": 2.0
+      "ast": 2.11
     },
     {
       "id": "3064290",
       "name": "Aaron Gordon",
       "team": "DEN",
-      "games": 7,
-      "minutes": 29.43,
-      "pts": 12.29,
-      "reb": 5.29,
-      "ast": 2.43
+      "games": 8,
+      "minutes": 29.12,
+      "pts": 12.25,
+      "reb": 5.25,
+      "ast": 2.12
     },
     {
       "id": "3138196",
       "name": "Cameron Johnson",
       "team": "DEN",
-      "games": 4,
-      "minutes": 27.25,
-      "pts": 9.0,
-      "reb": 4.25,
-      "ast": 2.0
+      "games": 5,
+      "minutes": 27.6,
+      "pts": 10.8,
+      "reb": 4.2,
+      "ast": 1.8
     },
     {
       "id": "3112335",
       "name": "Nikola Jokic",
       "team": "DEN",
-      "games": 7,
-      "minutes": 35.86,
-      "pts": 23.43,
-      "reb": 9.71,
-      "ast": 9.29
+      "games": 8,
+      "minutes": 35.88,
+      "pts": 22.88,
+      "reb": 10.12,
+      "ast": 9.12
     },
     {
       "id": "3936299",
       "name": "Jamal Murray",
       "team": "DEN",
-      "games": 7,
-      "minutes": 36.86,
-      "pts": 25.43,
-      "reb": 5.43,
-      "ast": 5.86
+      "games": 8,
+      "minutes": 36.5,
+      "pts": 24.25,
+      "reb": 5.5,
+      "ast": 6.12
     },
     {
       "id": "4431767",
       "name": "Christian Braun",
       "team": "DEN",
-      "games": 7,
-      "minutes": 35.0,
-      "pts": 14.57,
-      "reb": 3.86,
-      "ast": 2.29
+      "games": 8,
+      "minutes": 34.25,
+      "pts": 13.5,
+      "reb": 3.88,
+      "ast": 2.12
     },
     {
       "id": "4065813",
@@ -3721,11 +3721,11 @@
       "id": "4277848",
       "name": "Marvin Bagley III",
       "team": "DEN",
-      "games": 7,
-      "minutes": 12.43,
-      "pts": 5.43,
-      "reb": 3.57,
-      "ast": 0.71
+      "games": 8,
+      "minutes": 12.38,
+      "pts": 6.0,
+      "reb": 3.5,
+      "ast": 0.62
     },
     {
       "id": "4433607",
@@ -3741,41 +3741,41 @@
       "id": "4565698",
       "name": "Bryce Hopkins",
       "team": "DEN",
-      "games": 5,
-      "minutes": 18.8,
-      "pts": 6.6,
-      "reb": 2.6,
-      "ast": 0.6
+      "games": 6,
+      "minutes": 16.17,
+      "pts": 6.0,
+      "reb": 2.33,
+      "ast": 0.5
     },
     {
       "id": "4698719",
       "name": "Trevon Brazile",
       "team": "DEN",
-      "games": 7,
-      "minutes": 22.14,
-      "pts": 8.0,
-      "reb": 6.43,
-      "ast": 0.43
+      "games": 8,
+      "minutes": 21.12,
+      "pts": 7.38,
+      "reb": 6.12,
+      "ast": 0.62
     },
     {
       "id": "3978",
       "name": "DeMar DeRozan",
       "team": "DEN",
-      "games": 6,
-      "minutes": 25.17,
-      "pts": 10.67,
-      "reb": 2.0,
-      "ast": 2.67
+      "games": 7,
+      "minutes": 24.71,
+      "pts": 10.71,
+      "reb": 1.86,
+      "ast": 3.0
     },
     {
       "id": "3135046",
       "name": "Tyus Jones",
       "team": "DEN",
-      "games": 7,
-      "minutes": 11.0,
-      "pts": 2.86,
-      "reb": 0.14,
-      "ast": 1.71
+      "games": 8,
+      "minutes": 11.25,
+      "pts": 2.88,
+      "reb": 0.62,
+      "ast": 2.0
     },
     {
       "id": "4433629",
@@ -3831,11 +3831,11 @@
       "id": "5106262",
       "name": "Zuby Ejiofor",
       "team": "ATL",
-      "games": 5,
-      "minutes": 11.2,
-      "pts": 5.4,
-      "reb": 3.0,
-      "ast": 1.8
+      "games": 6,
+      "minutes": 12.33,
+      "pts": 5.67,
+      "reb": 3.5,
+      "ast": 1.5
     },
     {
       "id": "5211176",
@@ -3891,31 +3891,31 @@
       "id": "4398207",
       "name": "Jalen Slawson",
       "team": "IND",
-      "games": 8,
-      "minutes": 15.25,
-      "pts": 3.75,
-      "reb": 3.38,
-      "ast": 1.0
+      "games": 9,
+      "minutes": 14.89,
+      "pts": 3.78,
+      "reb": 3.11,
+      "ast": 1.11
     },
     {
       "id": "4065731",
       "name": "Jay Huff",
       "team": "IND",
-      "games": 8,
-      "minutes": 19.38,
-      "pts": 8.0,
-      "reb": 3.88,
-      "ast": 1.12
+      "games": 9,
+      "minutes": 18.33,
+      "pts": 7.11,
+      "reb": 3.78,
+      "ast": 1.0
     },
     {
       "id": "4396909",
       "name": "Aaron Nesmith",
       "team": "IND",
-      "games": 7,
-      "minutes": 24.0,
-      "pts": 12.71,
-      "reb": 2.0,
-      "ast": 1.86
+      "games": 8,
+      "minutes": 24.38,
+      "pts": 12.12,
+      "reb": 2.38,
+      "ast": 1.75
     },
     {
       "id": "4431752",
@@ -3941,30 +3941,30 @@
       "id": "3133635",
       "name": "Jevon Carter",
       "team": "ORL",
-      "games": 4,
-      "minutes": 14.0,
-      "pts": 2.75,
-      "reb": 0.5,
-      "ast": 2.0
+      "games": 5,
+      "minutes": 14.2,
+      "pts": 4.0,
+      "reb": 0.6,
+      "ast": 1.6
     },
     {
       "id": "4593034",
       "name": "Alex Morales",
       "team": "ORL",
-      "games": 5,
-      "minutes": 8.0,
-      "pts": 1.0,
-      "reb": 1.2,
-      "ast": 0.2
+      "games": 6,
+      "minutes": 9.17,
+      "pts": 0.83,
+      "reb": 1.33,
+      "ast": 0.33
     },
     {
       "id": "2581184",
       "name": "Anthony Gill",
       "team": "WAS",
-      "games": 1,
-      "minutes": 1.0,
-      "pts": 0.0,
-      "reb": 0.0,
+      "games": 2,
+      "minutes": 5.0,
+      "pts": 0.5,
+      "reb": 0.5,
       "ast": 0.0
     },
     {
@@ -3991,21 +3991,21 @@
       "id": "4432819",
       "name": "Tre Mann",
       "team": "WAS",
-      "games": 3,
-      "minutes": 1.67,
-      "pts": 0.67,
+      "games": 4,
+      "minutes": 5.75,
+      "pts": 1.0,
       "reb": 0.0,
-      "ast": 0.0
+      "ast": 0.5
     },
     {
       "id": "5144126",
       "name": "Will Riley",
       "team": "WAS",
-      "games": 7,
-      "minutes": 5.29,
-      "pts": 1.57,
-      "reb": 0.0,
-      "ast": 0.14
+      "games": 8,
+      "minutes": 7.12,
+      "pts": 2.0,
+      "reb": 0.25,
+      "ast": 0.25
     },
     {
       "id": "4397882",
@@ -4071,11 +4071,11 @@
       "id": "4709138",
       "name": "Brandin Podziemski",
       "team": "GSW",
-      "games": 7,
-      "minutes": 33.29,
-      "pts": 15.86,
-      "reb": 5.14,
-      "ast": 4.71
+      "games": 8,
+      "minutes": 34.0,
+      "pts": 15.75,
+      "reb": 5.38,
+      "ast": 4.25
     },
     {
       "id": "4277811",
@@ -4161,11 +4161,11 @@
       "id": "3134916",
       "name": "Jordan McLaughlin",
       "team": "SAS",
-      "games": 4,
-      "minutes": 6.5,
-      "pts": 0.5,
-      "reb": 1.0,
-      "ast": 1.5
+      "games": 5,
+      "minutes": 7.6,
+      "pts": 1.0,
+      "reb": 0.8,
+      "ast": 1.2
     },
     {
       "id": "5105806",
@@ -4201,20 +4201,20 @@
       "id": "4397886",
       "name": "Charles Bassey",
       "team": "GSW",
-      "games": 7,
-      "minutes": 11.86,
-      "pts": 7.0,
-      "reb": 5.29,
-      "ast": 0.57
+      "games": 8,
+      "minutes": 11.75,
+      "pts": 7.12,
+      "reb": 5.12,
+      "ast": 0.5
     },
     {
       "id": "3913174",
       "name": "Luke Kennard",
       "team": "PHX",
-      "games": 6,
-      "minutes": 16.5,
-      "pts": 7.83,
-      "reb": 1.5,
+      "games": 7,
+      "minutes": 16.14,
+      "pts": 8.29,
+      "reb": 1.43,
       "ast": 2.0
     },
     {
@@ -4241,11 +4241,11 @@
       "id": "5107173",
       "name": "Danny Wolf",
       "team": "BKN",
-      "games": 3,
-      "minutes": 15.33,
-      "pts": 9.33,
-      "reb": 4.33,
-      "ast": 2.0
+      "games": 4,
+      "minutes": 19.25,
+      "pts": 9.75,
+      "reb": 5.5,
+      "ast": 1.75
     },
     {
       "id": "5037873",
@@ -4271,21 +4271,21 @@
       "id": "4712849",
       "name": "Anthony Black",
       "team": "ORL",
-      "games": 5,
-      "minutes": 28.6,
-      "pts": 15.2,
-      "reb": 5.2,
-      "ast": 5.0
+      "games": 6,
+      "minutes": 30.17,
+      "pts": 15.67,
+      "reb": 5.67,
+      "ast": 5.17
     },
     {
       "id": "4433225",
       "name": "Tyler Kolek",
       "team": "NYK",
-      "games": 6,
-      "minutes": 12.17,
-      "pts": 2.5,
-      "reb": 1.33,
-      "ast": 5.17
+      "games": 7,
+      "minutes": 12.43,
+      "pts": 2.14,
+      "reb": 1.71,
+      "ast": 5.14
     },
     {
       "id": "4592979",
@@ -4321,11 +4321,11 @@
       "id": "5041951",
       "name": "Meleek Thomas",
       "team": "CLE",
-      "games": 6,
-      "minutes": 22.17,
-      "pts": 12.83,
-      "reb": 2.33,
-      "ast": 1.17
+      "games": 7,
+      "minutes": 22.43,
+      "pts": 12.29,
+      "reb": 2.57,
+      "ast": 1.0
     },
     {
       "id": "4683750",
@@ -4381,11 +4381,11 @@
       "id": "5105800",
       "name": "Josh Dix",
       "team": "OKC",
-      "games": 5,
-      "minutes": 16.4,
-      "pts": 2.8,
-      "reb": 1.2,
-      "ast": 0.2
+      "games": 6,
+      "minutes": 17.17,
+      "pts": 2.67,
+      "reb": 1.17,
+      "ast": 0.5
     },
     {
       "id": "4065673",
@@ -4471,11 +4471,11 @@
       "id": "5289900",
       "name": "Mohamed Diawara",
       "team": "NYK",
-      "games": 3,
-      "minutes": 9.33,
-      "pts": 2.67,
-      "reb": 2.33,
-      "ast": 1.33
+      "games": 4,
+      "minutes": 10.5,
+      "pts": 2.5,
+      "reb": 2.5,
+      "ast": 1.75
     },
     {
       "id": "4683730",
@@ -4501,31 +4501,31 @@
       "id": "5142718",
       "name": "AJ Dybantsa",
       "team": "WAS",
-      "games": 5,
-      "minutes": 31.6,
-      "pts": 15.4,
-      "reb": 5.8,
-      "ast": 2.2
+      "games": 6,
+      "minutes": 31.5,
+      "pts": 16.0,
+      "reb": 5.83,
+      "ast": 2.33
     },
     {
       "id": "5105854",
       "name": "Braden Smith",
       "team": "IND",
-      "games": 5,
-      "minutes": 16.8,
-      "pts": 6.0,
-      "reb": 1.0,
-      "ast": 3.4
+      "games": 6,
+      "minutes": 16.0,
+      "pts": 5.0,
+      "reb": 0.83,
+      "ast": 3.17
     },
     {
       "id": "4432827",
       "name": "Oscar Tshiebwe",
       "team": "HOU",
-      "games": 5,
-      "minutes": 7.6,
-      "pts": 3.0,
-      "reb": 2.4,
-      "ast": 0.6
+      "games": 6,
+      "minutes": 6.83,
+      "pts": 2.83,
+      "reb": 2.0,
+      "ast": 0.5
     },
     {
       "id": "5214989",
@@ -4561,11 +4561,11 @@
       "id": "4432185",
       "name": "Micah Peavy",
       "team": "OKC",
-      "games": 5,
-      "minutes": 15.8,
-      "pts": 3.8,
-      "reb": 3.8,
-      "ast": 0.2
+      "games": 6,
+      "minutes": 17.0,
+      "pts": 4.33,
+      "reb": 3.67,
+      "ast": 0.17
     },
     {
       "id": "3138160",
@@ -4631,21 +4631,21 @@
       "id": "4592435",
       "name": "Branden Carlson",
       "team": "POR",
-      "games": 3,
-      "minutes": 6.33,
-      "pts": 1.33,
-      "reb": 1.33,
-      "ast": 0.67
+      "games": 4,
+      "minutes": 7.75,
+      "pts": 2.0,
+      "reb": 1.5,
+      "ast": 0.5
     },
     {
       "id": "3907823",
       "name": "Terance Mann",
       "team": "BKN",
-      "games": 3,
-      "minutes": 14.33,
-      "pts": 0.67,
-      "reb": 1.0,
-      "ast": 1.67
+      "games": 4,
+      "minutes": 14.0,
+      "pts": 0.5,
+      "reb": 1.25,
+      "ast": 1.25
     },
     {
       "id": "4683935",
@@ -4661,11 +4661,11 @@
       "id": "4706557",
       "name": "Chris Youngblood",
       "team": "POR",
-      "games": 4,
-      "minutes": 9.25,
-      "pts": 4.25,
-      "reb": 0.75,
-      "ast": 0.5
+      "games": 5,
+      "minutes": 13.4,
+      "pts": 5.6,
+      "reb": 1.4,
+      "ast": 1.2
     },
     {
       "id": "4683742",
@@ -4731,9 +4731,9 @@
       "id": "5177362",
       "name": "Riley Minix",
       "team": "CLE",
-      "games": 1,
-      "minutes": 6.0,
-      "pts": 0.0,
+      "games": 2,
+      "minutes": 8.0,
+      "pts": 4.0,
       "reb": 3.0,
       "ast": 0.0
     },
@@ -4741,11 +4741,11 @@
       "id": "3934723",
       "name": "Thomas Bryant",
       "team": "CLE",
-      "games": 4,
-      "minutes": 11.25,
-      "pts": 9.0,
-      "reb": 2.0,
-      "ast": 0.0
+      "games": 5,
+      "minutes": 12.0,
+      "pts": 8.2,
+      "reb": 2.2,
+      "ast": 0.2
     },
     {
       "id": "5113969",
@@ -4841,11 +4841,11 @@
       "id": "4897943",
       "name": "Dalton Knecht",
       "team": "NYK",
-      "games": 1,
-      "minutes": 16.0,
-      "pts": 10.0,
-      "reb": 7.0,
-      "ast": 1.0
+      "games": 2,
+      "minutes": 10.5,
+      "pts": 5.0,
+      "reb": 3.5,
+      "ast": 0.5
     },
     {
       "id": "4433174",
@@ -4891,11 +4891,11 @@
       "id": "4433159",
       "name": "Dalen Terry",
       "team": "OKC",
-      "games": 1,
-      "minutes": 5.0,
-      "pts": 0.0,
-      "reb": 4.0,
-      "ast": 1.0
+      "games": 2,
+      "minutes": 5.5,
+      "pts": 1.0,
+      "reb": 3.0,
+      "ast": 0.5
     },
     {
       "id": "5060631",
@@ -4906,6 +4906,26 @@
       "pts": 4.0,
       "reb": 4.0,
       "ast": 2.0
+    },
+    {
+      "id": "4592427",
+      "name": "Spencer Jones",
+      "team": "DEN",
+      "games": 1,
+      "minutes": 21.0,
+      "pts": 13.0,
+      "reb": 6.0,
+      "ast": 0.0
+    },
+    {
+      "id": "2530530",
+      "name": "T.J. McConnell",
+      "team": "IND",
+      "games": 1,
+      "minutes": 9.0,
+      "pts": 6.0,
+      "reb": 2.0,
+      "ast": 1.0
     }
   ],
   "warnings": {
