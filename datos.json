@@ -1,32 +1,8 @@
 {
-  "updated": "2026-11-24T22:29:10.994142+00:00",
-  "date": "2026-11-24",
+  "updated": "2026-11-25T21:44:39.284970+00:00",
+  "date": "2026-11-25",
   "window": "Temporada regular actual (partidos recuperados de ESPN)",
   "matchups": {
-    "ORL": [
-      "DET",
-      1
-    ],
-    "DET": [
-      "ORL",
-      0
-    ],
-    "WAS": [
-      "BOS",
-      1
-    ],
-    "BOS": [
-      "WAS",
-      0
-    ],
-    "DEN": [
-      "DAL",
-      1
-    ],
-    "DAL": [
-      "DEN",
-      0
-    ],
     "PHI": [
       "MIA",
       1
@@ -99,6 +75,10 @@
       "POR",
       0
     ],
+    "DET": [
+      "MIL",
+      1
+    ],
     "IND": [
       "PHI",
       1
@@ -107,8 +87,16 @@
       "BKN",
       1
     ],
+    "BOS": [
+      "ATL",
+      1
+    ],
     "ATL": [
       "BOS",
+      0
+    ],
+    "DAL": [
+      "PHX",
       0
     ],
     "LAL": [
@@ -119,8 +107,20 @@
       "DEN",
       1
     ],
+    "DEN": [
+      "UTA",
+      0
+    ],
     "NOP": [
       "LAC",
+      0
+    ],
+    "WAS": [
+      "ORL",
+      1
+    ],
+    "ORL": [
+      "WAS",
       0
     ],
     "TBD": [
@@ -129,48 +129,6 @@
     ]
   },
   "games": {
-    "ORL": {
-      "opponent": "DET",
-      "home": 1,
-      "start": "2026-11-25T00:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909314"
-    },
-    "DET": {
-      "opponent": "ORL",
-      "home": 0,
-      "start": "2026-11-25T00:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909314"
-    },
-    "WAS": {
-      "opponent": "BOS",
-      "home": 1,
-      "start": "2026-11-25T01:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909315"
-    },
-    "BOS": {
-      "opponent": "WAS",
-      "home": 0,
-      "start": "2026-11-25T01:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909315"
-    },
-    "DEN": {
-      "opponent": "DAL",
-      "home": 1,
-      "start": "2026-11-25T03:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909316"
-    },
-    "DAL": {
-      "opponent": "DEN",
-      "home": 0,
-      "start": "2026-11-25T03:00:00+00:00",
-      "status": "scheduled",
-      "event_id": "401909316"
-    },
     "PHI": {
       "opponent": "MIA",
       "home": 1,
@@ -297,6 +255,13 @@
       "status": "scheduled",
       "event_id": "401909325"
     },
+    "DET": {
+      "opponent": "MIL",
+      "home": 1,
+      "start": "2026-11-28T00:30:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909327"
+    },
     "IND": {
       "opponent": "PHI",
       "home": 1,
@@ -311,12 +276,26 @@
       "status": "scheduled",
       "event_id": "401909329"
     },
+    "BOS": {
+      "opponent": "ATL",
+      "home": 1,
+      "start": "2026-11-28T01:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909330"
+    },
     "ATL": {
       "opponent": "BOS",
       "home": 0,
       "start": "2026-11-28T01:00:00+00:00",
       "status": "scheduled",
       "event_id": "401909330"
+    },
+    "DAL": {
+      "opponent": "PHX",
+      "home": 0,
+      "start": "2026-11-28T02:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909332"
     },
     "LAL": {
       "opponent": "SAS",
@@ -332,12 +311,33 @@
       "status": "scheduled",
       "event_id": "401909334"
     },
+    "DEN": {
+      "opponent": "UTA",
+      "home": 0,
+      "start": "2026-11-28T02:30:00+00:00",
+      "status": "scheduled",
+      "event_id": "401909334"
+    },
     "NOP": {
       "opponent": "LAC",
       "home": 0,
       "start": "2026-11-28T02:30:00+00:00",
       "status": "scheduled",
       "event_id": "401909335"
+    },
+    "WAS": {
+      "opponent": "ORL",
+      "home": 1,
+      "start": "2026-11-28T22:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401910046"
+    },
+    "ORL": {
+      "opponent": "WAS",
+      "home": 0,
+      "start": "2026-11-28T22:00:00+00:00",
+      "status": "scheduled",
+      "event_id": "401910046"
     },
     "TBD": {
       "opponent": "TBD",
@@ -352,21 +352,21 @@
       "id": "4251",
       "name": "Paul George",
       "team": "BOS",
-      "games": 14,
-      "minutes": 30.14,
-      "pts": 19.86,
-      "reb": 5.64,
-      "ast": 3.79
+      "games": 15,
+      "minutes": 30.33,
+      "pts": 20.4,
+      "reb": 5.53,
+      "ast": 4.13
     },
     {
       "id": "4065648",
       "name": "Jayson Tatum",
       "team": "BOS",
-      "games": 15,
-      "minutes": 34.33,
-      "pts": 26.4,
-      "reb": 6.87,
-      "ast": 6.73
+      "games": 16,
+      "minutes": 34.5,
+      "pts": 27.31,
+      "reb": 6.81,
+      "ast": 6.81
     },
     {
       "id": "4351852",
@@ -382,81 +382,81 @@
       "id": "3078576",
       "name": "Derrick White",
       "team": "BOS",
-      "games": 16,
+      "games": 17,
       "minutes": 30.0,
-      "pts": 12.75,
-      "reb": 3.0,
+      "pts": 12.35,
+      "reb": 3.24,
       "ast": 5.0
     },
     {
       "id": "4683689",
       "name": "Jordan Walsh",
       "team": "BOS",
-      "games": 17,
-      "minutes": 14.82,
-      "pts": 4.35,
-      "reb": 2.82,
-      "ast": 0.47
+      "games": 18,
+      "minutes": 14.28,
+      "pts": 4.11,
+      "reb": 2.78,
+      "ast": 0.5
     },
     {
       "id": "4065804",
       "name": "Sam Hauser",
       "team": "BOS",
-      "games": 17,
-      "minutes": 21.06,
-      "pts": 8.41,
-      "reb": 3.12,
-      "ast": 1.24
+      "games": 18,
+      "minutes": 21.11,
+      "pts": 8.17,
+      "reb": 3.11,
+      "ast": 1.22
     },
     {
       "id": "4277951",
       "name": "Luka Garza",
       "team": "BOS",
-      "games": 17,
-      "minutes": 13.0,
-      "pts": 5.71,
-      "reb": 3.12,
-      "ast": 1.53
+      "games": 18,
+      "minutes": 13.28,
+      "pts": 5.78,
+      "reb": 3.17,
+      "ast": 1.44
     },
     {
       "id": "4397424",
       "name": "Neemias Queta",
       "team": "BOS",
-      "games": 16,
-      "minutes": 23.25,
-      "pts": 9.75,
-      "reb": 7.06,
+      "games": 17,
+      "minutes": 23.35,
+      "pts": 10.41,
+      "reb": 6.94,
       "ast": 2.0
     },
     {
       "id": "4066354",
       "name": "Payton Pritchard",
       "team": "BOS",
-      "games": 17,
-      "minutes": 27.65,
-      "pts": 12.94,
-      "reb": 3.12,
-      "ast": 4.06
+      "games": 18,
+      "minutes": 27.67,
+      "pts": 13.0,
+      "reb": 3.17,
+      "ast": 3.94
     },
     {
       "id": "4593841",
       "name": "Baylor Scheierman",
       "team": "BOS",
-      "games": 17,
+      "games": 18,
       "minutes": 19.0,
-      "pts": 5.41,
-      "reb": 3.65,
-      "ast": 1.41
+      "pts": 5.56,
+      "reb": 3.67,
+      "ast": 1.39
     },
     {
       "id": "5175647",
       "name": "Hugo Gonzalez",
       "team": "BOS",
-      "games": 17,
-      "minutes": 13.65,
-      "pts": 4.12,
-      "reb": 2.59,
-      "ast": 0.59
+      "games": 18,
+      "minutes": 13.39,
+      "pts": 3.89,
+      "reb": 2.72,
+      "ast": 0.56
     },
     {
       "id": "3157465",
@@ -472,11 +472,11 @@
       "id": "3908845",
       "name": "John Collins",
       "team": "DET",
-      "games": 16,
-      "minutes": 25.62,
-      "pts": 11.06,
-      "reb": 5.75,
-      "ast": 0.69
+      "games": 17,
+      "minutes": 25.65,
+      "pts": 11.12,
+      "reb": 5.65,
+      "ast": 0.65
     },
     {
       "id": "4433621",
@@ -502,71 +502,71 @@
       "id": "4684742",
       "name": "Ausar Thompson",
       "team": "DET",
-      "games": 15,
-      "minutes": 29.27,
-      "pts": 11.07,
-      "reb": 8.53,
-      "ast": 5.33
+      "games": 16,
+      "minutes": 29.38,
+      "pts": 10.75,
+      "reb": 8.69,
+      "ast": 5.44
     },
     {
       "id": "4278562",
       "name": "Paul Reed",
       "team": "DET",
-      "games": 16,
-      "minutes": 26.25,
-      "pts": 11.69,
-      "reb": 7.44,
-      "ast": 2.25
+      "games": 17,
+      "minutes": 26.0,
+      "pts": 11.53,
+      "reb": 7.35,
+      "ast": 2.18
     },
     {
       "id": "4683771",
       "name": "Ronald Holland II",
       "team": "DET",
-      "games": 13,
-      "minutes": 15.54,
-      "pts": 4.69,
-      "reb": 3.85,
-      "ast": 1.69
+      "games": 14,
+      "minutes": 15.64,
+      "pts": 5.29,
+      "reb": 3.79,
+      "ast": 1.64
     },
     {
       "id": "2596112",
       "name": "Javonte Green",
       "team": "DET",
-      "games": 16,
-      "minutes": 18.88,
-      "pts": 7.12,
-      "reb": 2.69,
-      "ast": 0.44
+      "games": 17,
+      "minutes": 19.35,
+      "pts": 7.06,
+      "reb": 2.65,
+      "ast": 0.47
     },
     {
       "id": "4066372",
       "name": "Kevin Huerter",
       "team": "DET",
-      "games": 16,
-      "minutes": 26.94,
-      "pts": 10.06,
-      "reb": 2.75,
-      "ast": 2.62
+      "games": 17,
+      "minutes": 27.24,
+      "pts": 10.24,
+      "reb": 2.94,
+      "ast": 2.76
     },
     {
       "id": "4395702",
       "name": "Isaiah Joe",
       "team": "DET",
-      "games": 6,
-      "minutes": 16.83,
-      "pts": 10.17,
-      "reb": 1.67,
-      "ast": 1.33
+      "games": 7,
+      "minutes": 18.71,
+      "pts": 11.71,
+      "reb": 2.0,
+      "ast": 1.14
     },
     {
       "id": "5107199",
       "name": "Daniss Jenkins",
       "team": "DET",
-      "games": 16,
-      "minutes": 30.44,
-      "pts": 14.06,
-      "reb": 3.75,
-      "ast": 4.38
+      "games": 17,
+      "minutes": 30.71,
+      "pts": 14.12,
+      "reb": 3.76,
+      "ast": 4.71
     },
     {
       "id": "1966",
@@ -915,7 +915,7 @@
       "games": 16,
       "minutes": 30.31,
       "pts": 11.56,
-      "reb": 4.0,
+      "reb": 4.06,
       "ast": 2.88
     },
     {
@@ -1132,61 +1132,61 @@
       "id": "4566434",
       "name": "Franz Wagner",
       "team": "ORL",
-      "games": 16,
-      "minutes": 36.44,
-      "pts": 24.5,
-      "reb": 6.88,
-      "ast": 8.25
+      "games": 17,
+      "minutes": 36.53,
+      "pts": 24.24,
+      "reb": 7.0,
+      "ast": 8.12
     },
     {
       "id": "4277847",
       "name": "Wendell Carter Jr.",
       "team": "ORL",
-      "games": 16,
-      "minutes": 32.06,
-      "pts": 12.75,
-      "reb": 8.56,
-      "ast": 1.38
+      "games": 17,
+      "minutes": 32.41,
+      "pts": 12.53,
+      "reb": 8.82,
+      "ast": 1.41
     },
     {
       "id": "4066320",
       "name": "Desmond Bane",
       "team": "ORL",
-      "games": 15,
-      "minutes": 34.8,
-      "pts": 18.53,
-      "reb": 3.93,
-      "ast": 2.87
+      "games": 16,
+      "minutes": 34.75,
+      "pts": 18.69,
+      "reb": 3.75,
+      "ast": 3.0
     },
     {
       "id": "4432165",
       "name": "Jalen Suggs",
       "team": "ORL",
-      "games": 8,
-      "minutes": 28.62,
-      "pts": 9.25,
-      "reb": 5.12,
-      "ast": 4.0
+      "games": 9,
+      "minutes": 29.11,
+      "pts": 8.67,
+      "reb": 4.89,
+      "ast": 4.11
     },
     {
       "id": "4278572",
       "name": "Jamal Cain",
       "team": "ORL",
-      "games": 14,
-      "minutes": 16.21,
-      "pts": 5.29,
-      "reb": 3.0,
-      "ast": 0.36
+      "games": 15,
+      "minutes": 15.2,
+      "pts": 4.93,
+      "reb": 2.8,
+      "ast": 0.33
     },
     {
       "id": "4702382",
       "name": "Tristan da Silva",
       "team": "ORL",
-      "games": 14,
-      "minutes": 29.57,
-      "pts": 14.07,
-      "reb": 3.64,
-      "ast": 1.57
+      "games": 15,
+      "minutes": 29.8,
+      "pts": 14.2,
+      "reb": 3.6,
+      "ast": 1.53
     },
     {
       "id": "6478",
@@ -1202,21 +1202,21 @@
       "id": "4348700",
       "name": "Goga Bitadze",
       "team": "ORL",
-      "games": 14,
-      "minutes": 13.14,
-      "pts": 4.79,
-      "reb": 3.86,
-      "ast": 0.71
+      "games": 15,
+      "minutes": 13.13,
+      "pts": 4.6,
+      "reb": 4.13,
+      "ast": 0.73
     },
     {
       "id": "5239561",
       "name": "Jase Richardson",
       "team": "ORL",
-      "games": 12,
-      "minutes": 20.33,
-      "pts": 5.58,
-      "reb": 1.83,
-      "ast": 2.33
+      "games": 13,
+      "minutes": 18.85,
+      "pts": 5.15,
+      "reb": 1.69,
+      "ast": 2.15
     },
     {
       "id": "3134907",
@@ -1332,61 +1332,61 @@
       "id": "6583",
       "name": "Anthony Davis",
       "team": "WAS",
-      "games": 16,
-      "minutes": 34.0,
-      "pts": 25.12,
-      "reb": 9.94,
-      "ast": 2.06
+      "games": 17,
+      "minutes": 34.18,
+      "pts": 25.59,
+      "reb": 10.12,
+      "ast": 2.0
     },
     {
       "id": "5174563",
       "name": "Kyshawn George",
       "team": "WAS",
-      "games": 18,
-      "minutes": 33.89,
-      "pts": 17.78,
-      "reb": 4.33,
-      "ast": 4.44
+      "games": 19,
+      "minutes": 34.11,
+      "pts": 18.11,
+      "reb": 4.58,
+      "ast": 4.37
     },
     {
       "id": "5160992",
       "name": "Alex Sarr",
       "team": "WAS",
-      "games": 17,
-      "minutes": 26.71,
-      "pts": 11.24,
-      "reb": 6.82,
-      "ast": 1.65
+      "games": 18,
+      "minutes": 26.56,
+      "pts": 11.0,
+      "reb": 6.56,
+      "ast": 1.56
     },
     {
       "id": "4277905",
       "name": "Trae Young",
       "team": "WAS",
-      "games": 18,
-      "minutes": 34.61,
-      "pts": 17.06,
-      "reb": 2.78,
-      "ast": 8.78
+      "games": 19,
+      "minutes": 34.63,
+      "pts": 17.05,
+      "reb": 2.63,
+      "ast": 8.95
     },
     {
       "id": "5104155",
       "name": "Bilal Coulibaly",
       "team": "WAS",
-      "games": 17,
-      "minutes": 24.94,
-      "pts": 6.94,
-      "reb": 4.29,
-      "ast": 0.71
+      "games": 18,
+      "minutes": 24.78,
+      "pts": 7.11,
+      "reb": 4.22,
+      "ast": 0.72
     },
     {
       "id": "6609",
       "name": "Khris Middleton",
       "team": "WAS",
-      "games": 10,
-      "minutes": 16.4,
-      "pts": 4.8,
-      "reb": 1.9,
-      "ast": 1.3
+      "games": 11,
+      "minutes": 16.55,
+      "pts": 4.36,
+      "reb": 2.18,
+      "ast": 1.18
     },
     {
       "id": "4432907",
@@ -1402,31 +1402,31 @@
       "id": "4278129",
       "name": "Deandre Ayton",
       "team": "WAS",
-      "games": 18,
-      "minutes": 12.5,
-      "pts": 3.61,
-      "reb": 4.0,
-      "ast": 0.78
+      "games": 19,
+      "minutes": 12.11,
+      "pts": 3.42,
+      "reb": 3.89,
+      "ast": 0.74
     },
     {
       "id": "4845374",
       "name": "Bub Carrington",
       "team": "WAS",
-      "games": 17,
-      "minutes": 16.0,
-      "pts": 4.53,
-      "reb": 1.24,
-      "ast": 1.76
+      "games": 18,
+      "minutes": 15.5,
+      "pts": 4.28,
+      "reb": 1.28,
+      "ast": 1.67
     },
     {
       "id": "5238230",
       "name": "Tre Johnson",
       "team": "WAS",
-      "games": 16,
-      "minutes": 20.69,
-      "pts": 8.62,
-      "reb": 1.94,
-      "ast": 0.88
+      "games": 17,
+      "minutes": 19.94,
+      "pts": 8.12,
+      "reb": 1.88,
+      "ast": 0.82
     },
     {
       "id": "4431671",
@@ -2495,7 +2495,7 @@
       "games": 8,
       "minutes": 22.62,
       "pts": 6.12,
-      "reb": 8.88,
+      "reb": 9.0,
       "ast": 1.25
     },
     {
@@ -2572,81 +2572,81 @@
       "id": "4278049",
       "name": "Daniel Gafford",
       "team": "DAL",
-      "games": 17,
-      "minutes": 22.24,
-      "pts": 8.71,
-      "reb": 5.35,
-      "ast": 2.06
+      "games": 18,
+      "minutes": 22.5,
+      "pts": 8.94,
+      "reb": 5.39,
+      "ast": 2.11
     },
     {
       "id": "4278078",
       "name": "P.J. Washington",
       "team": "DAL",
-      "games": 15,
-      "minutes": 30.93,
+      "games": 16,
+      "minutes": 30.56,
       "pts": 14.0,
-      "reb": 6.67,
-      "ast": 1.33
+      "reb": 6.62,
+      "ast": 1.25
     },
     {
       "id": "5041939",
       "name": "Cooper Flagg",
       "team": "DAL",
-      "games": 16,
-      "minutes": 33.44,
-      "pts": 24.31,
-      "reb": 6.31,
-      "ast": 6.38
+      "games": 17,
+      "minutes": 33.29,
+      "pts": 24.29,
+      "reb": 6.29,
+      "ast": 6.71
     },
     {
       "id": "6442",
       "name": "Kyrie Irving",
       "team": "DAL",
-      "games": 14,
-      "minutes": 30.71,
-      "pts": 22.0,
-      "reb": 3.64,
-      "ast": 4.64
+      "games": 15,
+      "minutes": 30.93,
+      "pts": 21.27,
+      "reb": 3.73,
+      "ast": 4.73
     },
     {
       "id": "4432582",
       "name": "Max Christie",
       "team": "DAL",
-      "games": 14,
-      "minutes": 18.07,
-      "pts": 5.64,
-      "reb": 2.79,
-      "ast": 1.07
+      "games": 15,
+      "minutes": 17.13,
+      "pts": 5.4,
+      "reb": 2.67,
+      "ast": 1.0
     },
     {
       "id": "4278594",
       "name": "Naji Marshall",
       "team": "DAL",
-      "games": 14,
-      "minutes": 24.29,
-      "pts": 10.64,
-      "reb": 2.71,
-      "ast": 3.86
+      "games": 15,
+      "minutes": 24.13,
+      "pts": 10.87,
+      "reb": 2.6,
+      "ast": 3.73
     },
     {
       "id": "4873153",
       "name": "Morez Johnson Jr.",
       "team": "DAL",
-      "games": 16,
-      "minutes": 17.31,
-      "pts": 6.31,
-      "reb": 4.69,
-      "ast": 1.38
+      "games": 17,
+      "minutes": 17.41,
+      "pts": 6.47,
+      "reb": 5.0,
+      "ast": 1.35
     },
     {
       "id": "5211175",
       "name": "Zaccharie Risacher",
       "team": "DAL",
-      "games": 17,
-      "minutes": 24.0,
-      "pts": 8.94,
-      "reb": 5.0,
-      "ast": 1.24
+      "games": 18,
+      "minutes": 23.83,
+      "pts": 9.11,
+      "reb": 5.06,
+      "ast": 1.22
     },
     {
       "id": "5279129",
@@ -2662,11 +2662,11 @@
       "id": "4701208",
       "name": "Moussa Cisse",
       "team": "DAL",
-      "games": 10,
-      "minutes": 3.8,
-      "pts": 1.3,
-      "reb": 0.8,
-      "ast": 0.1
+      "games": 11,
+      "minutes": 3.64,
+      "pts": 1.18,
+      "reb": 0.73,
+      "ast": 0.09
     },
     {
       "id": "4432107",
@@ -3672,81 +3672,81 @@
       "id": "3064290",
       "name": "Aaron Gordon",
       "team": "DEN",
-      "games": 15,
-      "minutes": 29.47,
-      "pts": 12.07,
-      "reb": 5.0,
-      "ast": 2.13
+      "games": 16,
+      "minutes": 29.12,
+      "pts": 11.38,
+      "reb": 4.88,
+      "ast": 2.19
     },
     {
       "id": "3138196",
       "name": "Cameron Johnson",
       "team": "DEN",
-      "games": 12,
-      "minutes": 29.0,
-      "pts": 12.42,
-      "reb": 3.5,
-      "ast": 2.33
+      "games": 13,
+      "minutes": 29.38,
+      "pts": 12.77,
+      "reb": 3.62,
+      "ast": 2.38
     },
     {
       "id": "3112335",
       "name": "Nikola Jokic",
       "team": "DEN",
-      "games": 15,
-      "minutes": 37.13,
-      "pts": 25.07,
-      "reb": 10.93,
-      "ast": 9.2
+      "games": 16,
+      "minutes": 36.88,
+      "pts": 24.62,
+      "reb": 10.94,
+      "ast": 8.94
     },
     {
       "id": "3936299",
       "name": "Jamal Murray",
       "team": "DEN",
-      "games": 15,
-      "minutes": 37.0,
-      "pts": 26.2,
-      "reb": 5.0,
-      "ast": 5.87
+      "games": 16,
+      "minutes": 36.94,
+      "pts": 25.81,
+      "reb": 4.81,
+      "ast": 5.69
     },
     {
       "id": "4431767",
       "name": "Christian Braun",
       "team": "DEN",
-      "games": 15,
-      "minutes": 33.87,
-      "pts": 13.73,
-      "reb": 4.6,
-      "ast": 2.47
+      "games": 16,
+      "minutes": 33.56,
+      "pts": 13.81,
+      "reb": 4.44,
+      "ast": 2.56
     },
     {
       "id": "4065813",
       "name": "Alpha Diallo",
       "team": "DEN",
-      "games": 4,
-      "minutes": 8.25,
-      "pts": 1.0,
-      "reb": 0.75,
-      "ast": 0.5
+      "games": 5,
+      "minutes": 7.2,
+      "pts": 1.2,
+      "reb": 0.8,
+      "ast": 0.6
     },
     {
       "id": "4277848",
       "name": "Marvin Bagley III",
       "team": "DEN",
-      "games": 15,
-      "minutes": 11.73,
-      "pts": 5.67,
-      "reb": 3.53,
-      "ast": 0.4
+      "games": 16,
+      "minutes": 11.75,
+      "pts": 5.88,
+      "reb": 3.5,
+      "ast": 0.38
     },
     {
       "id": "4433607",
       "name": "DaRon Holmes II",
       "team": "DEN",
-      "games": 4,
-      "minutes": 2.75,
-      "pts": 0.75,
-      "reb": 0.25,
-      "ast": 0.5
+      "games": 5,
+      "minutes": 2.8,
+      "pts": 0.6,
+      "reb": 0.2,
+      "ast": 0.4
     },
     {
       "id": "4565698",
@@ -3762,31 +3762,31 @@
       "id": "4698719",
       "name": "Trevon Brazile",
       "team": "DEN",
-      "games": 15,
-      "minutes": 18.13,
-      "pts": 6.47,
-      "reb": 4.87,
-      "ast": 0.33
+      "games": 16,
+      "minutes": 17.75,
+      "pts": 6.06,
+      "reb": 4.75,
+      "ast": 0.31
     },
     {
       "id": "3978",
       "name": "DeMar DeRozan",
       "team": "DEN",
-      "games": 14,
-      "minutes": 22.5,
-      "pts": 9.86,
-      "reb": 1.86,
-      "ast": 2.5
+      "games": 15,
+      "minutes": 22.13,
+      "pts": 9.8,
+      "reb": 2.07,
+      "ast": 2.4
     },
     {
       "id": "3135046",
       "name": "Tyus Jones",
       "team": "DEN",
-      "games": 15,
-      "minutes": 10.53,
-      "pts": 2.13,
-      "reb": 0.67,
-      "ast": 2.0
+      "games": 16,
+      "minutes": 10.62,
+      "pts": 2.12,
+      "reb": 0.75,
+      "ast": 1.94
     },
     {
       "id": "4433629",
@@ -3892,11 +3892,11 @@
       "id": "4896372",
       "name": "Walter Clayton Jr.",
       "team": "DAL",
-      "games": 16,
-      "minutes": 18.56,
-      "pts": 7.81,
-      "reb": 2.88,
-      "ast": 3.38
+      "games": 17,
+      "minutes": 18.29,
+      "pts": 7.65,
+      "reb": 2.82,
+      "ast": 3.29
     },
     {
       "id": "4398207",
@@ -3952,21 +3952,21 @@
       "id": "3133635",
       "name": "Jevon Carter",
       "team": "ORL",
-      "games": 12,
-      "minutes": 14.33,
-      "pts": 4.25,
-      "reb": 1.17,
-      "ast": 1.67
+      "games": 13,
+      "minutes": 14.69,
+      "pts": 4.62,
+      "reb": 1.08,
+      "ast": 1.54
     },
     {
       "id": "4593034",
       "name": "Alex Morales",
       "team": "ORL",
-      "games": 9,
-      "minutes": 11.89,
-      "pts": 1.89,
-      "reb": 2.22,
-      "ast": 0.78
+      "games": 10,
+      "minutes": 10.8,
+      "pts": 1.7,
+      "reb": 2.0,
+      "ast": 0.7
     },
     {
       "id": "2581184",
@@ -4002,21 +4002,21 @@
       "id": "4432819",
       "name": "Tre Mann",
       "team": "WAS",
-      "games": 8,
-      "minutes": 5.12,
-      "pts": 1.25,
-      "reb": 0.12,
-      "ast": 0.5
+      "games": 9,
+      "minutes": 4.67,
+      "pts": 1.11,
+      "reb": 0.11,
+      "ast": 0.56
     },
     {
       "id": "5144126",
       "name": "Will Riley",
       "team": "WAS",
-      "games": 15,
-      "minutes": 7.13,
-      "pts": 2.6,
-      "reb": 0.87,
-      "ast": 0.33
+      "games": 16,
+      "minutes": 7.0,
+      "pts": 2.75,
+      "reb": 0.81,
+      "ast": 0.31
     },
     {
       "id": "4397882",
@@ -4282,11 +4282,11 @@
       "id": "4712849",
       "name": "Anthony Black",
       "team": "ORL",
-      "games": 13,
-      "minutes": 33.23,
-      "pts": 16.08,
-      "reb": 5.08,
-      "ast": 5.38
+      "games": 14,
+      "minutes": 32.86,
+      "pts": 15.29,
+      "reb": 5.0,
+      "ast": 5.14
     },
     {
       "id": "4433225",
@@ -4362,11 +4362,11 @@
       "id": "5142621",
       "name": "Chris Cenac Jr.",
       "team": "BOS",
-      "games": 8,
-      "minutes": 7.75,
-      "pts": 3.25,
-      "reb": 2.38,
-      "ast": 0.12
+      "games": 9,
+      "minutes": 7.56,
+      "pts": 2.89,
+      "reb": 2.33,
+      "ast": 0.22
     },
     {
       "id": "3195",
@@ -4382,11 +4382,11 @@
       "id": "4397251",
       "name": "Ron Harper Jr.",
       "team": "BOS",
-      "games": 9,
-      "minutes": 7.33,
-      "pts": 2.89,
-      "reb": 0.56,
-      "ast": 0.44
+      "games": 10,
+      "minutes": 7.4,
+      "pts": 2.8,
+      "reb": 0.5,
+      "ast": 0.4
     },
     {
       "id": "5105800",
@@ -4422,10 +4422,10 @@
       "id": "4431690",
       "name": "Zeke Nnaji",
       "team": "DEN",
-      "games": 2,
-      "minutes": 4.0,
-      "pts": 3.5,
-      "reb": 0.5,
+      "games": 3,
+      "minutes": 3.67,
+      "pts": 2.67,
+      "reb": 0.67,
       "ast": 0.0
     },
     {
@@ -4452,21 +4452,21 @@
       "id": "4397449",
       "name": "Elijah Harkless",
       "team": "DET",
-      "games": 4,
-      "minutes": 5.75,
-      "pts": 2.0,
-      "reb": 0.75,
-      "ast": 1.25
+      "games": 5,
+      "minutes": 7.4,
+      "pts": 3.0,
+      "reb": 0.8,
+      "ast": 1.4
     },
     {
       "id": "4700852",
       "name": "Chaz Lanier",
       "team": "DET",
-      "games": 7,
-      "minutes": 8.71,
-      "pts": 3.57,
-      "reb": 0.57,
-      "ast": 0.14
+      "games": 8,
+      "minutes": 8.5,
+      "pts": 3.38,
+      "reb": 0.75,
+      "ast": 0.12
     },
     {
       "id": "5211983",
@@ -4512,11 +4512,11 @@
       "id": "5142718",
       "name": "AJ Dybantsa",
       "team": "WAS",
-      "games": 14,
-      "minutes": 33.86,
-      "pts": 16.5,
-      "reb": 6.93,
-      "ast": 2.79
+      "games": 15,
+      "minutes": 34.33,
+      "pts": 16.73,
+      "reb": 7.2,
+      "ast": 3.07
     },
     {
       "id": "5105854",
@@ -4582,11 +4582,11 @@
       "id": "3138160",
       "name": "Caleb Martin",
       "team": "DAL",
-      "games": 13,
-      "minutes": 22.0,
-      "pts": 6.15,
-      "reb": 3.54,
-      "ast": 2.46
+      "games": 14,
+      "minutes": 22.57,
+      "pts": 6.64,
+      "reb": 3.57,
+      "ast": 2.57
     },
     {
       "id": "4278077",
@@ -4892,11 +4892,11 @@
       "id": "4593125",
       "name": "Santi Aldama",
       "team": "DAL",
-      "games": 8,
-      "minutes": 13.0,
-      "pts": 6.12,
-      "reb": 2.88,
-      "ast": 0.62
+      "games": 9,
+      "minutes": 12.67,
+      "pts": 5.78,
+      "reb": 2.67,
+      "ast": 0.56
     },
     {
       "id": "4433159",
@@ -4922,11 +4922,11 @@
       "id": "4592427",
       "name": "Spencer Jones",
       "team": "DEN",
-      "games": 8,
-      "minutes": 18.12,
-      "pts": 3.62,
-      "reb": 2.38,
-      "ast": 0.75
+      "games": 9,
+      "minutes": 18.56,
+      "pts": 4.0,
+      "reb": 2.44,
+      "ast": 0.78
     },
     {
       "id": "2530530",
